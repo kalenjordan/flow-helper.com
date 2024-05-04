@@ -95,9 +95,9 @@ function Calendar() {
                         <video
                           width="100%"
                           controls="controls"
-                          poster="welcome.jpg"
+                          poster="/welcome.jpg"
                         >
-                          <source src="welcome.mp4" />
+                          <source src="/welcome.mp4" />
                         </video>
                       </Bleed>
                     </Card>
@@ -113,18 +113,18 @@ function Calendar() {
                     <InlineStack gap="600" align="center">
                       <img
                         className="logo shopify"
-                        src="logo-shopify.png"
+                        src="/logo-shopify.png"
                         alt="Shopify Logo"
                       />
                       <img
                         className="logo shopify-plus"
-                        src="logo-shopify-plus.png"
+                        src="/logo-shopify-plus.png"
                         alt="Shopify Plus Logo"
                       />
-                      <img className="logo klaviyo" src="logo-klaviyo.png" />
-                      <img className="logo xero" src="logo-xero.png" />
-                      <img className="logo recharge" src="logo-recharge.png" />
-                      <img className="logo" src="logo-netsuite.png" />
+                      <img className="logo klaviyo" src="/logo-klaviyo.png" />
+                      <img className="logo xero" src="/logo-xero.png" />
+                      <img className="logo recharge" src="/logo-recharge.png" />
+                      <img className="logo" src="/logo-netsuite.png" />
                     </InlineStack>
                   </BlockStack>
                   <Divider borderColor="border" />

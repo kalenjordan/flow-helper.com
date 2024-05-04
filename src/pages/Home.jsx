@@ -24,8 +24,9 @@ import {
 } from "@shopify/polaris";
 import "@shopify/polaris/build/esm/styles.css";
 import { CartIcon, CalendarIcon } from "@shopify/polaris-icons";
-import { useState, useCallback } from "react";
+import { useState } from "react";
 import { SimpleIndexTableExample } from "../components/FlowsIndexTable";
+import { Availability } from "../components/Availability";
 
 function App() {
   const [dismissed, setDismissed] = useState(false);
@@ -267,31 +268,7 @@ function App() {
                         </video>
                       </Bleed>
                     </Card>
-                    {dismissed ? null : (
-                      <Banner
-                        title="My current availability"
-                        tone="info"
-                        action={{
-                          content: "Book a call",
-                          variant: "primary",
-                          url: "/calendar",
-                          icon: CalendarIcon,
-                        }}
-                        secondaryAction={{
-                          content: "Email me",
-                          url: "mailto:kalenj@gmail.com",
-                        }}
-                        onDismiss={() => {
-                          setDismissed(!dismissed);
-                        }}
-                      >
-                        <Text as="p" variant="bodyLg">
-                          I currently have around 20 hours/week available.You
-                          can prepay by selecting a package or feel free to
-                          reach out with any questions.
-                        </Text>
-                      </Banner>
-                    )}
+                    <Availability showBookCall={true} />
                   </BlockStack>
                 </Layout.Section>
               </Layout>

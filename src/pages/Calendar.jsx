@@ -50,23 +50,25 @@ function Calendar() {
                 <Text
                   as="h1"
                   variant="headingXl"
-                  alignment="center"
+                  alignment="left"
                   fontWeight="regular"
                 >
+                  <Link monochrome url="/">
+                    Home
+                  </Link>
+                  {" > "}
                   Book a call
                 </Text>
-                <Box paddingInline={{ xs: 600, lg: 3200 }}>
-                  <Text
-                    alignment="center"
-                    variant="headingMd"
-                    fontWeight="regular"
-                    className="subtitle"
-                  >
-                    Whether using Shopify Flow, IPaaS systems, or writin custom
-                    - if you need any automation done in Shopify or integrations
-                    with systems, I'm your guy.
-                  </Text>
-                </Box>
+                <Text
+                  alignment="left"
+                  variant="headingMd"
+                  fontWeight="regular"
+                  className="subtitle"
+                >
+                  Whether using Shopify Flow, IPaaS systems, or writin custom -
+                  if you need any automation done in Shopify or integrations
+                  with systems, I'm your guy.
+                </Text>
               </BlockStack>
               <Layout>
                 <Layout.Section>

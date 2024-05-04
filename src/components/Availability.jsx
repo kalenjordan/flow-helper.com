@@ -26,7 +26,7 @@ export function Availability({ showBookCall }) {
               ? {
                   content: "Book a call",
                   variant: "primary",
-                  url: "/calendar",
+                  url: "/calendar/",
                   icon: CalendarIcon,
                 }
               : null

@@ -39,10 +39,15 @@ export function Availability({ showBookCall }) {
             setDismissed(!dismissed);
           }}
         >
-          <Text as="p" variant="bodyLg">
-            I currently have 15 hours/week available. You can prepay by
-            selecting a package or feel free to reach out with any questions.
-          </Text>
+          <BlockStack gap="300">
+            <span>
+              <Badge tone="info">15 hours/week</Badge>
+            </span>
+            <Text as="p" variant="bodyLg">
+              I currently have 15 hours/week available. You can prepay by
+              selecting a package or feel free to reach out with any questions.
+            </Text>
+          </BlockStack>
         </Banner>
       )}
     </>

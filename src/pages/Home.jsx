@@ -54,7 +54,7 @@ function App() {
                     fontWeight="regular"
                     className="subtitle"
                   >
-                    Whether using Shopify Flow, IPaaS systems, or writin custom
+                    Whether using Shopify Flow, IPaaS systems, or writing custom
                     - if you need any automation done in Shopify or integrations
                     with systems, I'm your guy.
                   </Text>

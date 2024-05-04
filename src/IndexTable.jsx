@@ -35,7 +35,6 @@ export function SimpleIndexTableExample() {
           <Badge>ChatGPT</Badge>
         </InlineStack>
       ),
-      platform: <Badge tone="success">Shopify</Badge>,
     },
     {
       name: "Adapt international shoe sizes",

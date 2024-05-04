@@ -1,4 +1,4 @@
-import "./App.css";
+import "../main.css";
 
 import enTranslations from "@shopify/polaris/locales/en.json";
 import {
@@ -25,7 +25,7 @@ import {
 import "@shopify/polaris/build/esm/styles.css";
 import { CartIcon, CalendarIcon } from "@shopify/polaris-icons";
 import { useState, useCallback } from "react";
-import { SimpleIndexTableExample } from "./IndexTable";
+import { SimpleIndexTableExample } from "../components/FlowsIndexTable";
 
 function App() {
   const [dismissed, setDismissed] = useState(false);
@@ -274,8 +274,7 @@ function App() {
                         action={{
                           content: "Book a call",
                           variant: "primary",
-                          url: "https://cal.com/kalenjordan",
-                          target: "_blank",
+                          url: "/calendar",
                           icon: CalendarIcon,
                         }}
                         secondaryAction={{

@@ -4,7 +4,7 @@
 }
 
 body {
-  background: url("/public/background.png");
+  background: url("background.png");
   background-position: bottom left;
   background-repeat: no-repeat;
   background-size: cover;

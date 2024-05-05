@@ -101,10 +101,10 @@ export function SimpleIndexTableExample() {
         position={index}
       >
         <IndexTable.Cell>
-          <Text variant="bodyMd" fontWeight="bold">
-            {name}
+          <Text variant="bodyMd">{name}</Text>
+          <Text variant="bodyMd" tone="subdued">
+            {description}
           </Text>
-          <Text variant="bodyMd">{description}</Text>
         </IndexTable.Cell>
         <IndexTable.Cell>{platform}</IndexTable.Cell>
       </IndexTable.Row>

@@ -9,8 +9,20 @@ import {
   Avatar,
 } from "@shopify/polaris";
 import React from "react";
+import { api } from "../lib/api";
+import { useFindMany } from "@gadgetinc/react";
 
 export function SimpleIndexTableExample() {
+  const [{ data, fetching, error }] = useFindMany(api.template);
+
+  function toneForTag(tag) {
+    if (tag == "MESA") {
+      return "info";
+    } else if (tag == "Shopify") {
+      return "success";
+    }
+  }
+
   const flows = [
     {
       name: "AI image tagging",
@@ -124,7 +136,29 @@ export function SimpleIndexTableExample() {
         onSelectionChange={handleSelectionChange}
         headings={[{ title: "Flows I've built" }, { title: "Platforms" }]}
       >
-        {rowMarkup}
+        {!fetching &&
+          data.map((template) => (
+            <IndexTable.Row
+              id={template.id}
+              key={template.id}
+              selected={selectedResources.includes(template.id)}
+              position="1"
+            >
+              <IndexTable.Cell>
+                <Text variant="bodyMd">{template.name}</Text>
+                <Text variant="bodyMd" tone="subdued">
+                  {template.description}
+                </Text>
+              </IndexTable.Cell>
+              <IndexTable.Cell>
+                <InlineStack gap="200">
+                  {template.tags.map((tag) => (
+                    <Badge tone={toneForTag(tag)}>{tag}</Badge>
+                  ))}
+                </InlineStack>
+              </IndexTable.Cell>
+            </IndexTable.Row>
+          ))}
       </IndexTable>
     </LegacyCard>
   );

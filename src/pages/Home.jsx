@@ -162,7 +162,7 @@ function App() {
                         <Grid.Cell
                           columnSpan={{ xs: 6, sm: 4, md: 1, lg: 4, xl: 4 }}
                         >
-                          <BlockStack gap="300" as="lfdsafdsa">
+                          <BlockStack gap="300">
                             <Text as="h2" variant="headingMd">
                               10 Hours
                             </Text>

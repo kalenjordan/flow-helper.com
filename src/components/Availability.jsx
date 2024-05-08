@@ -41,11 +41,11 @@ export function Availability({ showBookCall }) {
         >
           <BlockStack gap="300">
             <span>
-              <Badge tone="info">15 hours/week</Badge>
+              <Badge tone="info">Next available: June 1</Badge>
             </span>
             <Text as="p" variant="bodyLg">
-              I currently have 15 hours/week available. You can prepay by
-              selecting a package or feel free to reach out with any questions.
+              You can prepay by selecting a package or feel free to reach out
+              with any questions.
             </Text>
           </BlockStack>
         </Banner>

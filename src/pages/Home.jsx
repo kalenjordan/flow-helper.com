@@ -173,10 +173,10 @@ function App() {
                             <span>
                               <Button
                                 icon={CartIcon}
-                                url="https://buy.stripe.com/dR601u0mX4eP9vafZ4"
+                                url="https://buy.stripe.com/eVaaG84DdeTt4aQ28j"
                                 target="_blank"
                               >
-                                $1,200
+                                $1,500
                               </Button>
                             </span>
                           </BlockStack>
@@ -194,11 +194,11 @@ function App() {
                             </Text>
                             <span>
                               <Button
-                                url="https://buy.stripe.com/7sI15yedNeTtazeeV1"
+                                url="https://buy.stripe.com/14k6pS0mX7r15eUeV4"
                                 target="_blank"
                                 icon={CartIcon}
                               >
-                                $2,100
+                                $2,250
                               </Button>
                             </span>
                           </BlockStack>
@@ -209,23 +209,23 @@ function App() {
                           <BlockStack gap="300">
                             <InlineStack gap="200">
                               <Text as="h2" variant="headingMd">
-                                30 Hours
+                                40 Hours
                               </Text>
                               <Badge gap="500" tone="success">
                                 Best Value
                               </Badge>
                             </InlineStack>
                             <Text as="p" variant="bodyLg">
-                              With a 30 hour consulting package, we're ready to
+                              With a 40 hour consulting package, we're ready to
                               start cooking with fire.
                             </Text>
                             <span>
                               <Button
-                                url="https://buy.stripe.com/28oaG85Hh3aL6iY3ch"
+                                url="https://buy.stripe.com/aEU3dGc5F3aL8r69AJ"
                                 target="_blank"
                                 icon={CartIcon}
                               >
-                                $3,000
+                                $4,000
                               </Button>
                             </span>
                           </BlockStack>

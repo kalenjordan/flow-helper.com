@@ -27,6 +27,7 @@ import { CartIcon, CalendarIcon } from "@shopify/polaris-icons";
 import { useState } from "react";
 import { SimpleIndexTableExample } from "../components/FlowsIndexTable";
 import { Availability } from "../components/Availability";
+import Rates from "../components/Rates";
 
 function App() {
   const [dismissed, setDismissed] = useState(false);
@@ -91,6 +92,11 @@ function App() {
                       className="logo rothys"
                       src="logo-rothys.png"
                       style={{ height: "35px", marginTop: "5px" }}
+                    />
+                    <img
+                      className="logo rothys"
+                      src="logo-rainbow.png"
+                      style={{ height: "35px" }}
                     />
                   </InlineStack>
                 </Box>
@@ -157,82 +163,18 @@ function App() {
                         </InlineStack>
                       </BlockStack>
                     </Card>
-                    <Card>
-                      <Grid columns={{ sm: 3 }}>
-                        <Grid.Cell
-                          columnSpan={{ xs: 6, sm: 4, md: 1, lg: 4, xl: 4 }}
-                        >
-                          <BlockStack gap="300">
-                            <Text as="h2" variant="headingMd">
-                              10 Hours
-                            </Text>
-                            <Text as="p" variant="bodyLg">
-                              With 10 hours of consulting, let's get off to the
-                              races with a quick win.
-                            </Text>
-                            <span>
-                              <Button
-                                icon={CartIcon}
-                                url="https://buy.stripe.com/eVaaG84DdeTt4aQ28j"
-                                target="_blank"
-                              >
-                                $1,500
-                              </Button>
-                            </span>
-                          </BlockStack>
-                        </Grid.Cell>
-                        <Grid.Cell
-                          columnSpan={{ xs: 6, sm: 4, md: 1, lg: 4, xl: 4 }}
-                        >
-                          <BlockStack gap="300">
-                            <Text as="h2" variant="headingMd">
-                              20 Hours
-                            </Text>
-                            <Text as="p" variant="bodyLg">
-                              With 20 hours, we'll have a little more time to
-                              get things just right.
-                            </Text>
-                            <span>
-                              <Button
-                                url="https://buy.stripe.com/14k6pS0mX7r15eUeV4"
-                                target="_blank"
-                                icon={CartIcon}
-                              >
-                                $2,250
-                              </Button>
-                            </span>
-                          </BlockStack>
-                        </Grid.Cell>
-                        <Grid.Cell
-                          columnSpan={{ xs: 6, sm: 4, md: 1, lg: 4, xl: 4 }}
-                        >
-                          <BlockStack gap="300">
-                            <InlineStack gap="200">
-                              <Text as="h2" variant="headingMd">
-                                40 Hours
-                              </Text>
-                              <Badge gap="500" tone="success">
-                                Best Value
-                              </Badge>
-                            </InlineStack>
-                            <Text as="p" variant="bodyLg">
-                              With a 40 hour consulting package, we're ready to
-                              start cooking with fire.
-                            </Text>
-                            <span>
-                              <Button
-                                url="https://buy.stripe.com/aEU3dGc5F3aL8r69AJ"
-                                target="_blank"
-                                icon={CartIcon}
-                              >
-                                $4,000
-                              </Button>
-                            </span>
-                          </BlockStack>
-                        </Grid.Cell>
-                      </Grid>
-                    </Card>
                     {SimpleIndexTableExample()}
+                    <Card>
+                      <Bleed marginInline="400" marginBlock="400">
+                        <video
+                          width="100%"
+                          controls="controls"
+                          poster="welcome.jpg"
+                        >
+                          <source src="welcome.mp4" />
+                        </video>
+                      </Bleed>
+                    </Card>
                   </BlockStack>
                 </Layout.Section>
                 <Layout.Section variant="oneThird">
@@ -257,18 +199,8 @@ function App() {
                         </span>
                       </BlockStack>
                     </Card>
-                    <Card>
-                      <Bleed marginInline="400" marginBlock="400">
-                        <video
-                          width="100%"
-                          controls="controls"
-                          poster="welcome.jpg"
-                        >
-                          <source src="welcome.mp4" />
-                        </video>
-                      </Bleed>
-                    </Card>
                     <Availability showBookCall={true} />
+                    <Rates showButtons={false} />
                   </BlockStack>
                 </Layout.Section>
               </Layout>

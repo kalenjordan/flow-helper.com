@@ -73,7 +73,21 @@ function Calendar() {
               <Layout>
                 <Layout.Section>
                   <BlockStack gap="500">
-                    <Card title="Order details">
+                    <Card background="bg-surface-caution">
+                      <BlockStack gap="200">
+                        <Text variant="headingMd" tone="caution">
+                          Limited Availability
+                        </Text>
+
+                        <Text as="p" variant="bodyLg" tone="caution">
+                          I'm currently booked out on consulting work, so I have
+                          limited availability in my calendar for calls related
+                          to new work. If the available times below don't work
+                          for you, feel free to shoot me an email.
+                        </Text>
+                      </BlockStack>
+                    </Card>
+                    <Card>
                       <Cal
                         calLink="kalenjordan/30min"
                         style={{

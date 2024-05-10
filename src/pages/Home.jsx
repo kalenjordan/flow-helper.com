@@ -4,13 +4,12 @@ import enTranslations from "@shopify/polaris/locales/en.json";
 import {
   AppProvider,
   Badge,
-  Banner,
   Bleed,
-  Button,
   Box,
   Card,
+  DescriptionList,
   Divider,
-  Grid,
+  Icon,
   Page,
   Text,
   Thumbnail,
@@ -23,7 +22,13 @@ import {
   Avatar,
 } from "@shopify/polaris";
 import "@shopify/polaris/build/esm/styles.css";
-import { CartIcon, CalendarIcon } from "@shopify/polaris-icons";
+import {
+  CalendarIcon,
+  PaymentIcon,
+  ReceiptRefundIcon,
+  ReplayIcon,
+  WorkIcon,
+} from "@shopify/polaris-icons";
 import { useState } from "react";
 import { SimpleIndexTableExample } from "../components/FlowsIndexTable";
 import { Availability } from "../components/Availability";
@@ -64,13 +69,10 @@ function App() {
               <Box paddingInline={{ xs: "400", sm: "0" }}>
                 <Card>
                   <Bleed marginInline="400" marginBlock="400">
-                    <div
-                      dangerouslySetInnerHTML={{
-                        __html: `<video width="100%" autoplay muted>
-                      <source src="flow-hire.mp4" />
-                    </video>`,
-                      }}
-                    />
+                    <img
+                      style={{ width: "100%", marginBottom: "-7px" }}
+                      src="flow-hire.png"
+                    ></img>
                   </Bleed>
                 </Card>
               </Box>
@@ -163,18 +165,81 @@ function App() {
                         </InlineStack>
                       </BlockStack>
                     </Card>
-                    {SimpleIndexTableExample()}
-                    <Card>
-                      <Bleed marginInline="400" marginBlock="400">
-                        <video
-                          width="100%"
-                          controls="controls"
-                          poster="welcome.jpg"
-                        >
-                          <source src="welcome.mp4" />
-                        </video>
-                      </Bleed>
+                    <Card
+                      title="Order details"
+                      background="bg-surface-secondary"
+                    >
+                      <BlockStack gap="300">
+                        <DescriptionList
+                          items={[
+                            {
+                              term: (
+                                <InlineStack as="span" align="start" gap="200">
+                                  <span>
+                                    <Icon source={CalendarIcon} as="span" />
+                                  </span>
+                                  Schedule a call
+                                </InlineStack>
+                              ),
+                              description:
+                                "We'll jump on a call to talk through your needs.",
+                            },
+                            {
+                              term: (
+                                <InlineStack as="span" align="start" gap="200">
+                                  <span>
+                                    <Icon source={PaymentIcon} as="span" />
+                                  </span>
+                                  Prepayment
+                                </InlineStack>
+                              ),
+                              description:
+                                "Once you feel comfortable, you can make a prepayment to lock you into my schedule, per my next availability.",
+                            },
+                            {
+                              term: (
+                                <InlineStack as="span" align="start" gap="200">
+                                  <span>
+                                    <Icon source={WorkIcon} as="span" />
+                                  </span>
+                                  Begin work
+                                </InlineStack>
+                              ),
+                              description:
+                                "I'll begin work and track hours on a daily basis so you have visibility into what's happening.",
+                            },
+                            {
+                              term: (
+                                <InlineStack as="span" align="start" gap="200">
+                                  <span>
+                                    <Icon source={ReplayIcon} as="span" />
+                                  </span>
+                                  Go monthly?
+                                </InlineStack>
+                              ),
+                              description:
+                                "Once we're done with the initial batch of hours, if things are going well and you have more work to get done, we can make it a monthly retainer.",
+                            },
+                            {
+                              term: (
+                                <InlineStack as="span" align="start" gap="200">
+                                  <span>
+                                    <Icon
+                                      source={ReceiptRefundIcon}
+                                      as="span"
+                                    />
+                                  </span>
+                                  Refund?
+                                </InlineStack>
+                              ),
+                              description:
+                                "At any time, you can request a refund for any of the unused hours that were prepaid.",
+                            },
+                          ]}
+                        />
+                      </BlockStack>
                     </Card>
+                    {SimpleIndexTableExample()}
                   </BlockStack>
                 </Layout.Section>
                 <Layout.Section variant="oneThird">
@@ -201,6 +266,17 @@ function App() {
                     </Card>
                     <Availability showBookCall={true} />
                     <Rates showButtons={false} />
+                    <Card>
+                      <Bleed marginInline="400" marginBlock="400">
+                        <video
+                          width="100%"
+                          controls="controls"
+                          poster="welcome.jpg"
+                        >
+                          <source src="welcome.mp4" />
+                        </video>
+                      </Bleed>
+                    </Card>
                   </BlockStack>
                 </Layout.Section>
               </Layout>

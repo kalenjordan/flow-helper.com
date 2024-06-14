@@ -20,6 +20,10 @@ const router = createBrowserRouter([
     element: <Calendar />,
   },
   {
+    path: "/hire",
+    element: <Work />,
+  },
+  {
     path: "/work",
     element: <Work />,
   },

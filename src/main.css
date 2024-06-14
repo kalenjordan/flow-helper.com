@@ -59,10 +59,37 @@ img.logo.xero {
   .Polaris-ShadowBevel {
     align-self: stretch;
 
+    .Polaris-Box {
+      background-color: #f2f2f2;
+      transition: background-color 0.3s ease-in-out;
+    }
+
     .Polaris-Icon {
       margin: 0;
     }
 
+    img {
+      filter: grayscale(1);
+      transition: filter 0.3s ease-in-out;
+    }
+
+    transition:
+      transform 0.3s ease-in-out,
+      box-shadow 0.3s ease-in-out;
+
+    &:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+      .Polaris-Box {
+        background-color: white;
+      }
+
+      img {
+        filter: grayscale(0);
+      }
+    }
+
+    /** MESA */
     &:first-child {
       grid-column: span 1;
       grid-row: span 2;
@@ -70,22 +97,37 @@ img.logo.xero {
 
     &:nth-child(3) {
       .Polaris-Box {
-        background-color: #f4eee8d9;
+        background-color: #efefefc2;
       }
     }
 
     &:nth-child(5) {
       .Polaris-Box {
-        background-color: #e2e2e294;
+        background-color: #efefefc2;
+      }
+    }
+
+    /** Magento */
+    &:nth-child(9) {
+      grid-column: span 2;
+      grid-row: span 1;
+      .Polaris-Box {
+        background-color: #fff2e3c2;
       }
     }
 
     &:nth-child(4) {
       grid-column: span 2;
       grid-row: span 1;
-      @media only screen and (max-width: 600px) {
-        grid-column: span 1;
-      }
+    }
+
+    .avatar {
+      width: 20px;
+      border-radius: 5px;
+    }
+
+    @media only screen and (max-width: 600px) {
+      grid-column: span 1 !important;
     }
   }
 }

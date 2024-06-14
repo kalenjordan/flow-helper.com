@@ -5,7 +5,9 @@ import {
   Avatar,
   AppProvider,
   Badge,
+  Bleed,
   Box,
+  Button,
   Card,
   Divider,
   Icon,
@@ -18,7 +20,16 @@ import {
   BlockStack,
 } from "@shopify/polaris";
 import "@shopify/polaris/build/esm/styles.css";
-import { CalendarIcon, PaymentIcon, ReceiptRefundIcon, ReplayIcon, WorkIcon } from "@shopify/polaris-icons";
+import {
+  AutomationIcon,
+  CalendarIcon,
+  DiscountIcon,
+  ReceiptRefundIcon,
+  ReplayIcon,
+  WorkIcon,
+  ThemeIcon,
+  ImportIcon,
+} from "@shopify/polaris-icons";
 import { useState, useEffect } from "react";
 import Cal, { getCalApi } from "@calcom/embed-react";
 import Rates from "../components/Rates";
@@ -45,128 +56,194 @@ function Calendar() {
           <Box paddingBlockStart={{ xs: 400, lg: 400 }}>
             <BlockStack gap="500">
               <BlockStack gap="200">
-                <Text as="h2" variant="headingM" alignment="left" fontWeight="regular">
-                  <Link monochrome url="/">
-                    Go back home
-                  </Link>
+                <Text as="h1" variant="headingXl" alignment="center" fontWeight="regular">
+                  Hire Kalen Jordan - Senior Shopify Developer
                 </Text>
+                <Box paddingInline={{ xs: 600, lg: 3200 }}>
+                  <Text alignment="center" variant="headingMd" fontWeight="regular" className="subtitle">
+                    As a veteran in the eCommerce industry and a fanatical Shopify enthusiast, if you're looking for
+                    help frontend or backend development, I'm your man.
+                  </Text>
+                </Box>
               </BlockStack>
+              <BlockStack gap="200"></BlockStack>
               <div class="work-grid">
                 <Card title="Tags" sectioned>
                   <BlockStack gap="300">
                     <InlineStack as="span" align="start" gap="200">
-                      <Icon source={CalendarIcon} as="span" />
+                      <Icon source={AutomationIcon} as="span" />
                       <Text as="h2" variant="headingMd">
                         Built 100s of workflow automations
                       </Text>
                     </InlineStack>
                     <Text as="p" variant="bodyLg">
-                      Flow Helper is a Shopify app that adds missing triggers and actions to use natively within Flow,
-                      including bulk flow runs. I've even discovered undocumented features in the Shopify core webhooks
-                      API.
+                      My most recent full time position was as the Platform Advocate for MESA, a workflow automation app
+                      built by ShopPad, the makers of a number of household-name Shopify apps including Infinite
+                      Options.
                     </Text>
-
-                    <span>
-                      <Badge as="span" tone="success">
-                        Automations
+                    <Text as="p" variant="bodyLg">
+                      In my role, I created hundreds of automations, working directly with brands and also building demo
+                      content for the blog and youtube channel.
+                    </Text>
+                    <Text as="p" variant="bodyLg">
+                      This experienced allowed me to gain a deep familiarity with the Shopify APIs. I even discovered an
+                      important undocumented feature of webhooks.
+                    </Text>
+                    <InlineStack as="span" align="start" gap="200">
+                      <Badge as="span" tone="default">
+                        Integrations
                       </Badge>
-                    </span>
+                      <Badge as="span" tone="default">
+                        Shopify Plus
+                      </Badge>
+                    </InlineStack>
                   </BlockStack>
                 </Card>
                 <Card title="Tags" sectioned>
                   <BlockStack gap="300">
                     <InlineStack as="span" align="start" gap="200">
-                      <Icon source={CalendarIcon} as="span" />
+                      <Icon source={ImportIcon} as="span" />
                       <Text as="h2" variant="headingMd">
                         NetSuite & Shopify Integration
                       </Text>
                     </InlineStack>
                     <Text as="p" variant="bodyLg">
-                      Flow Helper is a Shopify app that adds missing triggers and actions to use natively within Flow,
-                      including bulk flow runs.
+                      I built a NetSuite integration using a platform called Patchworks. This has involved mapping
+                      companies, company locations, price lists, products, and variants into Shopify.
                     </Text>
-                    <span>
+                    <InlineStack as="span" align="start" gap="200">
                       <Badge as="span" tone="default">
-                        In Development
+                        B2B
                       </Badge>
-                    </span>
+                      <Badge as="span" tone="default">
+                        Integrations
+                      </Badge>
+                      <Badge as="span" tone="default">
+                        Shopify Plus
+                      </Badge>
+                    </InlineStack>
                   </BlockStack>
+                </Card>
+
+                <Card title="Tags" sectioned>
+                  <Bleed marginInline="400" marginBlock="400">
+                    <img
+                      src="/milkxwhiskey-tall.png"
+                      width="100%"
+                      alt="Milk x Whiskey"
+                      style={{ "margin-bottom": "-4px" }}
+                    />
+                  </Bleed>
                 </Card>
                 <Card title="Tags" sectioned>
                   <BlockStack gap="300">
                     <InlineStack as="span" align="start" gap="200">
-                      <Icon source={CalendarIcon} as="span" />
+                      <Icon source={ThemeIcon} as="span" />
                       <Text as="h2" variant="headingMd">
-                        Tweaks To Brand's Theme
+                        Optimizations To A 3rd Party Theme
                       </Text>
                     </InlineStack>
                     <Text as="p" variant="bodyLg">
-                      Flow Helper is a Shopify app that adds missing triggers and actions to use natively within Flow,
-                      including bulk flow runs.
+                      I've made a number of improvements to the theme that this brand purchased, including the product
+                      grid on the product page, conversion rate optimizations to the cart page, and more.
                     </Text>
-                    <img src="/milkxwhiskey.png" width="100%" alt="Milk x Whiskey" />
-                    <span>
-                      <Badge as="span" tone="info">
-                        Pending Review
+                    <Text as="p" variant="bodyLg">
+                      "DUDE! That looks so good! YOU ROCK!" <br />
+                      -- The Client
+                    </Text>
+
+                    <InlineStack as="span" align="start" gap="200">
+                      <Badge as="span" tone="default">
+                        Frontend
                       </Badge>
-                    </span>
+                      <Badge as="span" tone="default">
+                        Theme Development
+                      </Badge>
+                    </InlineStack>
                   </BlockStack>
                 </Card>
-                <Card title="Tags" sectioned>
+                <Card title="Tags" sectioned className="testClass">
                   <BlockStack gap="300">
                     <InlineStack as="span" align="start" gap="200">
-                      <Icon source={CalendarIcon} as="span" />
+                      <Icon source={ReplayIcon} as="span" />
                       <Text as="h2" variant="headingMd">
                         Subscription App Development
                       </Text>
                     </InlineStack>
                     <Text as="p" variant="bodyLg">
-                      Flow Helper is a Shopify app that adds missing triggers and actions to use natively within Flow,
-                      including bulk flow runs.
+                      I'm in the process of building a Shopify app for a Subscriptions SaaS company that currently has
+                      apps available for Magento and Salesforce Commerce Cloud.
                     </Text>
-                    <span>
-                      <Badge as="span" tone="info">
-                        Pending Review
+                    <InlineStack as="span" align="start" gap="200">
+                      <Badge as="span" tone="default">
+                        App Development
                       </Badge>
-                    </span>
+                      <Badge as="span" tone="default">
+                        Frontend
+                      </Badge>
+                    </InlineStack>
                   </BlockStack>
                 </Card>
                 <Card title="Tags" sectioned>
                   <BlockStack gap="300">
                     <InlineStack as="span" align="start" gap="200">
-                      <Icon source={CalendarIcon} as="span" />
+                      <Icon source={DiscountIcon} as="span" />
                       <Text as="h2" variant="headingMd">
                         Discount Functions App
                       </Text>
                     </InlineStack>
                     <Text as="p" variant="bodyLg">
-                      Flow Helper is a Shopify app that adds missing triggers and actions to use natively within Flow,
-                      including bulk flow runs.
+                      An app that I started working on but haven't launched yet gives you access in the backend to a
+                      rule builder with infinite nesting of AND/OR logic for creating discounts.
                     </Text>
-                    <span>
-                      <Badge as="span" tone="info">
-                        Exploratory
+                    <InlineStack as="span" align="start" gap="200">
+                      <Badge as="span" tone="default">
+                        App Development
                       </Badge>
-                    </span>
+                      <Badge as="span" tone="default">
+                        Shopify Functions
+                      </Badge>
+                    </InlineStack>
                   </BlockStack>
                 </Card>
                 <Card title="Tags" sectioned>
                   <BlockStack gap="300">
                     <InlineStack as="span" align="start" gap="200">
-                      <Icon source={CalendarIcon} as="span" />
+                      <img src="/kalen-avatar-circle.png" class="avatar" alt="Kalen Jordan" />
+                      <Text as="h2" variant="headingMd">
+                        My Rates
+                      </Text>
+                    </InlineStack>
+                    <Text as="p" variant="bodyLg">
+                      If you're interested in hiring me, I generally charge $100/hour for brands and $80/hour for
+                      agencies. I look forward to hearing from you.
+                    </Text>
+                    <Button as="span" url="/calendar">
+                      Book a call
+                    </Button>
+                  </BlockStack>
+                </Card>
+                <Card title="Tags" sectioned>
+                  <BlockStack gap="300">
+                    <InlineStack as="span" align="start" gap="200">
+                      <img src="/favicon.png" class="avatar" alt="Kalen Jordan" />
                       <Text as="h2" variant="headingMd">
                         Built and launched my own app
                       </Text>
                     </InlineStack>
                     <Text as="p" variant="bodyLg">
                       Flow Helper is a Shopify app that adds missing triggers and actions to use natively within Flow,
-                      including bulk flow runs.
+                      for things like customer updated, product updated, and order updated. This allows you to do more
+                      in Flow.
                     </Text>
-                    <span>
-                      <Badge as="span" tone="success">
-                        Live
+                    <InlineStack as="span" align="start" gap="200">
+                      <Badge as="span" tone="default">
+                        App Development
                       </Badge>
-                    </span>
+                      <Badge as="span" tone="default">
+                        Automations
+                      </Badge>
+                    </InlineStack>
                   </BlockStack>
                 </Card>
                 <Card title="Tags" sectioned>
@@ -174,18 +251,24 @@ function Calendar() {
                     <InlineStack as="span" align="start" gap="200">
                       <Icon source={CalendarIcon} as="span" />
                       <Text as="h2" variant="headingMd">
-                        Mechanic email migrator
+                        Magento Stuff
                       </Text>
                     </InlineStack>
                     <Text as="p" variant="bodyLg">
-                      Flow Helper is a Shopify app that adds missing triggers and actions to use natively within Flow,
-                      including bulk flow runs.
+                      For a decade plus prior to diving into Shopify, I was heavily involved in the Magento ecosystem.
+                      Having started as a platform engineer for Smile.io (then Sweet Tooth Rewards), I later moved to
+                      work as the lead developer for a brand.
                     </Text>
-                    <span>
-                      <Badge as="span" tone="info">
-                        Pending Review
+                    <Text as="p" variant="bodyLg">
+                      It was then that I started building an email marketing app for Magento, which I grew into the
+                      low-mid 5 figures MRR and then sold. Next, I built a recruiting platform for Magento developers,
+                      which I grew into the mid 5 figures MRR.
+                    </Text>
+                    <InlineStack as="span" align="start" gap="200">
+                      <Badge as="span" tone="default">
+                        Magento
                       </Badge>
-                    </span>
+                    </InlineStack>
                   </BlockStack>
                 </Card>
               </div>

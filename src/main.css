@@ -106,7 +106,7 @@ img.logo.xero {
     }
 
     /** Magento */
-    &:nth-child(9) {
+    &:nth-child(8) {
       grid-column: span 2;
       grid-row: span 1;
       &:hover {

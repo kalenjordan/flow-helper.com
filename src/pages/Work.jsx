@@ -219,23 +219,6 @@ function Calendar() {
                 <Card title="Tags" sectioned>
                   <BlockStack gap="300">
                     <InlineStack as="span" align="start" gap="200">
-                      <img src="/kalen-avatar-circle.png" class="avatar" alt="Kalen Jordan" />
-                      <Text as="h2" variant="headingMd">
-                        My Rates
-                      </Text>
-                    </InlineStack>
-                    <Text as="p" variant="bodyLg">
-                      If you're interested in hiring me, I generally charge $100/hour for brands and $80/hour for
-                      agencies. I look forward to hearing from you.
-                    </Text>
-                    <Button as="span" url="/calendar">
-                      Book a call
-                    </Button>
-                  </BlockStack>
-                </Card>
-                <Card title="Tags" sectioned>
-                  <BlockStack gap="300">
-                    <InlineStack as="span" align="start" gap="200">
                       <img src="/favicon.png" class="avatar" alt="Kalen Jordan" />
                       <Text as="h2" variant="headingMd">
                         Built and launched my own app
@@ -291,6 +274,26 @@ function Calendar() {
                         Magento
                       </Badge>
                     </InlineStack>
+                  </BlockStack>
+                </Card>
+                <Card title="Tags" sectioned>
+                  <BlockStack gap="300">
+                    <InlineStack as="span" align="start" gap="200">
+                      <img src="/kalen-avatar-circle.png" class="avatar" alt="Kalen Jordan" />
+                      <Text as="h2" variant="headingMd">
+                        My Rates
+                      </Text>
+                    </InlineStack>
+                    <Text as="p" variant="bodyLg">
+                      If you're interested in working with me, I generally charge $100/hour for brands and $80/hour for
+                      agencies.
+                    </Text>
+                    <Text as="p" variant="bodyLg">
+                      I look forward to hearing from you! Feel free to book a call.
+                    </Text>
+                    <Button as="span" url="/calendar">
+                      Book a call
+                    </Button>
                   </BlockStack>
                 </Card>
               </div>

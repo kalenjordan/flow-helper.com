@@ -3,24 +3,18 @@ import "../main.css";
 import enTranslations from "@shopify/polaris/locales/en.json";
 import {
   AppProvider,
-  Badge,
-  Banner,
   Bleed,
-  Button,
   Box,
   Card,
   Divider,
-  Grid,
   Page,
   Text,
-  Thumbnail,
   InlineStack,
   FooterHelp,
   Layout,
   Link,
   Frame,
   BlockStack,
-  Avatar,
 } from "@shopify/polaris";
 import "@shopify/polaris/build/esm/styles.css";
 import { useState, useEffect } from "react";
@@ -29,6 +23,8 @@ import Rates from "../components/Rates";
 import Availability from "../components/Availability";
 
 function Calendar() {
+  let limitedAvailability = false;
+
   useEffect(() => {
     (async function () {
       const cal = await getCalApi({});
@@ -47,46 +43,36 @@ function Calendar() {
           <Box paddingBlockStart={{ xs: 400, lg: 400 }}>
             <BlockStack gap="500">
               <BlockStack gap="200">
-                <Text
-                  as="h1"
-                  variant="headingXl"
-                  alignment="left"
-                  fontWeight="regular"
-                >
+                <Text as="h1" variant="headingXl" alignment="left" fontWeight="regular">
                   <Link monochrome url="/">
                     Home
                   </Link>
                   {" > "}
                   Book a call
                 </Text>
-                <Text
-                  alignment="left"
-                  variant="headingMd"
-                  fontWeight="regular"
-                  className="subtitle"
-                >
-                  Whether using Shopify Flow, IPaaS systems, or writin custom -
-                  if you need any automation done in Shopify or integrations
-                  with systems, I'm your guy.
+                <Text alignment="left" variant="headingMd" fontWeight="regular" className="subtitle">
+                  Whether using Shopify Flow, IPaaS systems, or writin custom - if you need any automation done in
+                  Shopify or integrations with systems, I'm your guy.
                 </Text>
               </BlockStack>
               <Layout>
                 <Layout.Section>
                   <BlockStack gap="500">
-                    <Card background="bg-surface-caution">
-                      <BlockStack gap="200">
-                        <Text variant="headingMd" tone="caution">
-                          Limited Availability
-                        </Text>
+                    {limitedAvailability && (
+                      <Card background="bg-surface-caution">
+                        <BlockStack gap="200">
+                          <Text variant="headingMd" tone="caution">
+                            Limited Availability
+                          </Text>
 
-                        <Text as="p" variant="bodyLg" tone="caution">
-                          I'm currently booked out on consulting work, so I have
-                          limited availability in my calendar for calls related
-                          to new work. If the available times below don't work
-                          for you, feel free to shoot me an email.
-                        </Text>
-                      </BlockStack>
-                    </Card>
+                          <Text as="p" variant="bodyLg" tone="caution">
+                            I'm currently booked out on consulting work, so I have limited availability in my calendar
+                            for calls related to new work. If the available times below don't work for you, feel free to
+                            shoot me an email.
+                          </Text>
+                        </BlockStack>
+                      </Card>
+                    )}
                     <Card>
                       <Cal
                         calLink="kalenjordan/30min"
@@ -106,11 +92,7 @@ function Calendar() {
                     <Rates showButtons={false} />
                     <Card>
                       <Bleed marginInline="400" marginBlock="400">
-                        <video
-                          width="100%"
-                          controls="controls"
-                          poster="/welcome.jpg"
-                        >
+                        <video width="100%" controls="controls" poster="/welcome.jpg">
                           <source src="/welcome.mp4" />
                         </video>
                       </Bleed>
@@ -125,16 +107,8 @@ function Calendar() {
                       Systems I've integrated with
                     </Text>
                     <InlineStack gap="600" align="center">
-                      <img
-                        className="logo shopify"
-                        src="/logo-shopify.png"
-                        alt="Shopify Logo"
-                      />
-                      <img
-                        className="logo shopify-plus"
-                        src="/logo-shopify-plus.png"
-                        alt="Shopify Plus Logo"
-                      />
+                      <img className="logo shopify" src="/logo-shopify.png" alt="Shopify Logo" />
+                      <img className="logo shopify-plus" src="/logo-shopify-plus.png" alt="Shopify Plus Logo" />
                       <img className="logo klaviyo" src="/logo-klaviyo.png" />
                       <img className="logo xero" src="/logo-xero.png" />
                       <img className="logo recharge" src="/logo-recharge.png" />

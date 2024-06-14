@@ -57,7 +57,7 @@ function Calendar() {
             <BlockStack gap="500">
               <BlockStack gap="200">
                 <Text as="h1" variant="headingXl" alignment="center" fontWeight="regular">
-                  Hire Kalen Jordan - Senior Shopify Developer
+                  Hire Kalen Jordan, Senior Shopify Developer
                 </Text>
                 <Box paddingInline={{ xs: 600, lg: 3200 }}>
                   <Text alignment="center" variant="headingMd" fontWeight="regular" className="subtitle">
@@ -77,13 +77,19 @@ function Calendar() {
                       </Text>
                     </InlineStack>
                     <Text as="p" variant="bodyLg">
-                      My most recent full time position was as the Platform Advocate for MESA, a workflow automation app
-                      built by ShopPad, the makers of a number of household-name Shopify apps including Infinite
-                      Options.
+                      My most recent full time position was as the Platform Advocate for{" "}
+                      <a href="https://www.getmesa.com" target="_blank">
+                        MESA
+                      </a>
+                      , a workflow automation app built by ShopPad, the makers of a number of household-name Shopify
+                      apps including Infinite Options.
                     </Text>
                     <Text as="p" variant="bodyLg">
-                      In my role, I created hundreds of automations, working directly with brands and also building demo
-                      content for the blog and youtube channel.
+                      In my role, I created{" "}
+                      <a target="_blank" href="https://www.getmesa.com/blog/category/automation-demos/">
+                        hundreds of automations
+                      </a>
+                      , working directly with brands and also building demo content for the blog and youtube channel.
                     </Text>
                     <Text as="p" variant="bodyLg">
                       This experienced allowed me to gain a deep familiarity with the Shopify APIs. I even discovered an
@@ -144,8 +150,12 @@ function Calendar() {
                       </Text>
                     </InlineStack>
                     <Text as="p" variant="bodyLg">
-                      I've made a number of improvements to the theme that this brand purchased, including the product
-                      grid on the product page, conversion rate optimizations to the cart page, and more.
+                      I've made a number of improvements to the theme that{" "}
+                      <a href="https://milkxwhiskey.com/" target="_blank">
+                        this brand
+                      </a>{" "}
+                      purchased, including the product grid on the product page, conversion rate optimizations to the
+                      cart page, and more.
                     </Text>
                     <Text as="p" variant="bodyLg">
                       "DUDE! That looks so good! YOU ROCK!" <br />
@@ -232,9 +242,11 @@ function Calendar() {
                       </Text>
                     </InlineStack>
                     <Text as="p" variant="bodyLg">
-                      Flow Helper is a Shopify app that adds missing triggers and actions to use natively within Flow,
-                      for things like customer updated, product updated, and order updated. This allows you to do more
-                      in Flow.
+                      <a href="https://apps.shopify.com/flow-helper" target="_blank">
+                        Flow Helper
+                      </a>{" "}
+                      is a Shopify app that adds missing triggers and actions to use natively within Flow, for things
+                      like customer updated, product updated, and order updated. This allows you to do more in Flow.
                     </Text>
                     <InlineStack as="span" align="start" gap="200">
                       <Badge as="span" tone="default">
@@ -257,12 +269,22 @@ function Calendar() {
                     <Text as="p" variant="bodyLg">
                       For a decade plus prior to diving into Shopify, I was heavily involved in the Magento ecosystem.
                       Having started as a platform engineer for Smile.io (then Sweet Tooth Rewards), I later moved to
-                      work as the lead developer for a brand.
+                      work as the lead developer for a{" "}
+                      <a href="https://www.cleanprogram.com/" target="_blank">
+                        brand
+                      </a>
+                      .
                     </Text>
                     <Text as="p" variant="bodyLg">
-                      It was then that I started building an email marketing app for Magento, which I grew into the
-                      low-mid 5 figures MRR and then sold. Next, I built a recruiting platform for Magento developers,
-                      which I grew into the mid 5 figures MRR.
+                      It was then that I started building an{" "}
+                      <a href="https://www.linkedin.com/company/magemail/posts/?feedView=all" target="_blank">
+                        email marketing app
+                      </a>{" "}
+                      for Magento, which I grew into the low-mid 5 figures MRR and then sold. Next, I built a{" "}
+                      <a href="https://www.linkedin.com/company/17967050/" target="_blank">
+                        recruiting platform
+                      </a>{" "}
+                      for Magento developers, which I grew into the mid 5 figures MRR.
                     </Text>
                     <InlineStack as="span" align="start" gap="200">
                       <Badge as="span" tone="default">

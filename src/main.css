@@ -52,15 +52,20 @@ img.logo.xero {
   @media only screen and (max-width: 900px) {
     grid-template-columns: repeat(2, 1fr); /* Adjust this to fit your needs */
   }
-  @media only screen and (max-width: 600px) {
+  @media only screen and (max-width: 650px) {
     grid-template-columns: repeat(1, 1fr); /* Adjust this to fit your needs */
   }
 
   .Polaris-ShadowBevel {
     align-self: stretch;
+    a {
+      color: black;
+      text-decoration: none;
+    }
 
     .Polaris-Box {
       background-color: #f2f2f2;
+      opacity: 0.85;
       transition: background-color 0.3s ease-in-out;
     }
 
@@ -80,8 +85,13 @@ img.logo.xero {
     &:hover {
       transform: translateY(-3px);
       box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+      opacity: 1;
       .Polaris-Box {
         background-color: white;
+      }
+
+      a {
+        text-decoration: underline;
       }
 
       img {
@@ -95,24 +105,14 @@ img.logo.xero {
       grid-row: span 2;
     }
 
-    &:nth-child(3) {
-      .Polaris-Box {
-        background-color: #efefefc2;
-      }
-    }
-
-    &:nth-child(5) {
-      .Polaris-Box {
-        background-color: #efefefc2;
-      }
-    }
-
     /** Magento */
     &:nth-child(9) {
       grid-column: span 2;
       grid-row: span 1;
-      .Polaris-Box {
-        background-color: #fff2e3c2;
+      &:hover {
+        .Polaris-Box {
+          background-color: #fff2e3c2;
+        }
       }
     }
 
@@ -126,7 +126,7 @@ img.logo.xero {
       border-radius: 5px;
     }
 
-    @media only screen and (max-width: 600px) {
+    @media only screen and (max-width: 650px) {
       grid-column: span 1 !important;
     }
   }

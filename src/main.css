@@ -111,7 +111,7 @@ img.logo.xero {
       grid-row: span 1;
       &:hover {
         .Polaris-Box {
-          background-color: #fff2e3c2;
+          background-color: #fff2e3;
         }
       }
     }

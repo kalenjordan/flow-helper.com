@@ -58,19 +58,18 @@ img.logo.xero {
 
   .Polaris-ShadowBevel {
     align-self: stretch;
-    a {
+    p a {
       color: black;
       text-decoration: none;
     }
 
     .Polaris-Box {
-      background-color: #f2f2f2;
-      opacity: 0.85;
       transition: background-color 0.3s ease-in-out;
     }
 
     .Polaris-Icon {
       margin: 0;
+      transition: color 0.3s ease-in-out;
     }
 
     img {
@@ -90,7 +89,11 @@ img.logo.xero {
         background-color: white;
       }
 
-      a {
+      .Polaris-Icon {
+        color: #b58500;
+      }
+
+      p a {
         text-decoration: underline;
       }
 

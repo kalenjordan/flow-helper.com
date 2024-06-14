@@ -26,7 +26,7 @@ import {
   DiscountIcon,
   ReceiptRefundIcon,
   ReplayIcon,
-  WorkIcon,
+  StoreFilledIcon,
   ThemeIcon,
   ImportIcon,
 } from "@shopify/polaris-icons";
@@ -244,7 +244,7 @@ function Calendar() {
                 <Card title="Tags" sectioned>
                   <BlockStack gap="300">
                     <InlineStack as="span" align="start" gap="200">
-                      <Icon source={CalendarIcon} as="span" />
+                      <Icon source={StoreFilledIcon} as="span" />
                       <Text as="h2" variant="headingMd">
                         Magento Stuff
                       </Text>
@@ -285,15 +285,19 @@ function Calendar() {
                       </Text>
                     </InlineStack>
                     <Text as="p" variant="bodyLg">
-                      If you're interested in working with me, I generally charge $100/hour for brands and $80/hour for
-                      agencies.
+                      If you're interested in working with me, feel free to reach out to discuss rates.
                     </Text>
                     <Text as="p" variant="bodyLg">
                       I look forward to hearing from you! Feel free to book a call.
                     </Text>
-                    <Button as="span" url="/calendar">
-                      Book a call
-                    </Button>
+                    <InlineStack as="span" align="start" gap="200">
+                      <Button variant="primary" as="span" url="/calendar">
+                        Book a call
+                      </Button>
+                      <Button as="span" url="mailto:kalenj@gmail.com">
+                        Contact Me
+                      </Button>
+                    </InlineStack>
                   </BlockStack>
                 </Card>
               </div>

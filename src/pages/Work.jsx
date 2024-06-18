@@ -92,7 +92,7 @@ function Calendar() {
                       , working directly with brands and also building demo content for the blog and youtube channel.
                     </Text>
                     <Text as="p" variant="bodyLg">
-                      This experienced allowed me to gain a deep familiarity with the Shopify APIs. I even discovered an
+                      This experience allowed me to gain a deep familiarity with the Shopify APIs. I even discovered an
                       important undocumented feature of webhooks.
                     </Text>
                     <InlineStack as="span" align="start" gap="200">

@@ -21,9 +21,12 @@ import { useState, useEffect } from "react";
 import Cal, { getCalApi } from "@calcom/embed-react";
 import Rates from "../components/Rates";
 import Availability from "../components/Availability";
+import useDocumentTitle from "../useDocumentTitle";
 
 function Calendar() {
   let limitedAvailability = false;
+
+  useDocumentTitle("Book A Call | Flow Helper");
 
   useEffect(() => {
     (async function () {

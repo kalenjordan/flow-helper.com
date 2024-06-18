@@ -3,6 +3,7 @@ import ReactDOM from "react-dom/client";
 import Home from "./pages/Home.jsx";
 import Calendar from "./pages/Calendar.jsx";
 import Work from "./pages/Work.jsx";
+import TagOrderForReturnedProducts from "./posts/TagOrderForReturnedProducts.jsx";
 
 import { api } from "./lib/api";
 import { Provider } from "@gadgetinc/react";
@@ -26,6 +27,10 @@ const router = createBrowserRouter([
   {
     path: "/work",
     element: <Work />,
+  },
+  {
+    path: "/posts/tag-orders-for-returned-products-in-shopify-using-mesa",
+    element: <TagOrderForReturnedProducts />,
   },
 ]);
 

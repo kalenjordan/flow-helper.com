@@ -29,7 +29,7 @@ import {
   DiscountIcon,
   ReceiptRefundIcon,
   ReplayIcon,
-  StoreFilledIcon,
+  ReturnIcon,
   ThemeIcon,
   ImportIcon,
   PaymentIcon,
@@ -39,6 +39,7 @@ import { useState } from "react";
 import { SimpleIndexTableExample } from "../components/FlowsIndexTable";
 import { Availability } from "../components/Availability";
 import Rates from "../components/Rates";
+import useDocumentTitle from "../useDocumentTitle";
 
 function App() {
   const [dismissed, setDismissed] = useState(false);
@@ -309,7 +310,7 @@ function App() {
                         </InlineStack>
                       </BlockStack>
                     </Card>
-                    <Card title="Tags" sectioned>
+                    <Card>
                       <BlockStack gap="300">
                         <InlineStack as="span" align="start" gap="200">
                           <Icon source={ThemeIcon} as="span" />
@@ -361,6 +362,31 @@ function App() {
                           </Badge>
                         </InlineStack>
                       </BlockStack>
+                    </Card>
+                    <Card>
+                      <a href="/posts/tag-orders-for-returned-products-in-shopify-using-mesa" target="_blank">
+                        <BlockStack gap="300">
+                          <InlineStack as="span" align="start" gap="200">
+                            <Icon source={ReturnIcon} as="span" />
+                            <Text as="h2" variant="headingMd">
+                              Returned Product Tagging Flow
+                            </Text>
+                          </InlineStack>
+                          <Text as="p" variant="bodyLg">
+                            Managing returns can be a cumbersome process, especially for merchants who need to track
+                            returned containers from their customers. If you're looking to simplify this process, MESA
+                            offers a powerful solution that integrates seamlessly with your Shopify store.
+                          </Text>
+                          <InlineStack as="span" align="start" gap="200">
+                            <Badge as="span" tone="default">
+                              Integrations
+                            </Badge>
+                            <Badge as="span" tone="default">
+                              Shopify
+                            </Badge>
+                          </InlineStack>
+                        </BlockStack>
+                      </a>
                     </Card>
                   </div>
                 </BlockStack>

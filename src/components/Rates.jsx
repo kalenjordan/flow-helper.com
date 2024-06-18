@@ -1,15 +1,4 @@
-import {
-  Badge,
-  Bleed,
-  Box,
-  Button,
-  Grid,
-  Card,
-  Text,
-  InlineStack,
-  BlockStack,
-  InlineGrid,
-} from "@shopify/polaris";
+import { Badge, Bleed, Box, Button, Grid, Card, Text, InlineStack, BlockStack, InlineGrid } from "@shopify/polaris";
 import React from "react";
 import { CartIcon, CalendarIcon } from "@shopify/polaris-icons";
 
@@ -31,12 +20,8 @@ export function Rates({ showButtons }) {
               Let's get off to the races with a quick win.
             </Text>
             <span>
-              <Button
-                icon={CartIcon}
-                url="https://buy.stripe.com/eVaaG84DdeTt4aQ28j"
-                target="_blank"
-              >
-                $1,500
+              <Button icon={CartIcon} url="https://buy.stripe.com/14keWo8Tt4eP9va00e" target="_blank">
+                $1,200
               </Button>
             </span>
           </BlockStack>
@@ -49,12 +34,8 @@ export function Rates({ showButtons }) {
               We'll have a little more time to fine tune.
             </Text>
             <span>
-              <Button
-                url="https://buy.stripe.com/14k6pS0mX7r15eUeV4"
-                target="_blank"
-                icon={CartIcon}
-              >
-                $2,250
+              <Button url="https://buy.stripe.com/4gwbKc9Xx4eP36M3co" target="_blank" icon={CartIcon}>
+                $2,200
               </Button>
             </span>
           </BlockStack>
@@ -62,7 +43,7 @@ export function Rates({ showButtons }) {
           <BlockStack gap="300">
             <InlineStack gap="200">
               <Text as="h2" variant="headingMd">
-                40 Hours
+                30+ Hours
               </Text>
               <Badge gap="500" tone="success">
                 Best Value
@@ -72,12 +53,8 @@ export function Rates({ showButtons }) {
               Now we're cooking with fire.
             </Text>
             <span>
-              <Button
-                url="https://buy.stripe.com/aEU3dGc5F3aL8r69AJ"
-                target="_blank"
-                icon={CartIcon}
-              >
-                $4,000
+              <Button url="https://buy.stripe.com/28oaG85Hh3aL6iY3ch" target="_blank" icon={CartIcon}>
+                $3,000
               </Button>
             </span>
           </BlockStack>

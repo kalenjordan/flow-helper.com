@@ -6,6 +6,7 @@ import {
   Badge,
   Bleed,
   Box,
+  Button,
   Card,
   DescriptionList,
   Divider,
@@ -23,10 +24,15 @@ import {
 } from "@shopify/polaris";
 import "@shopify/polaris/build/esm/styles.css";
 import {
+  AutomationIcon,
   CalendarIcon,
-  PaymentIcon,
+  DiscountIcon,
   ReceiptRefundIcon,
   ReplayIcon,
+  StoreFilledIcon,
+  ThemeIcon,
+  ImportIcon,
+  PaymentIcon,
   WorkIcon,
 } from "@shopify/polaris-icons";
 import { useState } from "react";
@@ -44,62 +50,32 @@ function App() {
           <Box paddingBlockStart={{ xs: 400, lg: 400 }}>
             <BlockStack gap="500">
               <BlockStack gap="200">
-                <Text
-                  as="h1"
-                  variant="headingXl"
-                  alignment="center"
-                  fontWeight="regular"
-                >
-                  Shopify Automation
-                  As&nbsp;A&nbsp;Service&nbsp;(And&nbsp;As&nbsp;An&nbsp;App!)
+                <Text as="h1" variant="headingXl" alignment="center" fontWeight="regular">
+                  Shopify Automation As&nbsp;A&nbsp;Service
                 </Text>
                 <Box paddingInline={{ xs: 600, lg: 3200 }}>
-                  <Text
-                    alignment="center"
-                    variant="headingMd"
-                    fontWeight="regular"
-                    className="subtitle"
-                  >
-                    Whether using Shopify Flow, IPaaS systems, or writing custom
-                    - if you need any automation done in Shopify or integrations
-                    with systems, I'm your guy.
+                  <Text alignment="center" variant="headingMd" fontWeight="regular" className="subtitle">
+                    Whether using Shopify Flow, IPaaS systems, or writing custom - if you need any automation done in
+                    Shopify or integrations with systems, I'm your guy.
                   </Text>
                 </Box>
               </BlockStack>
               <Box paddingInline={{ xs: "400", sm: "0" }}>
                 <Card>
                   <Bleed marginInline="400" marginBlock="400">
-                    <img
-                      style={{ width: "100%", marginBottom: "-7px" }}
-                      src="flow-hire.png"
-                    ></img>
+                    <img style={{ width: "100%", marginBottom: "-7px" }} src="flow-hire.png"></img>
                   </Bleed>
                 </Card>
               </Box>
               <BlockStack gap="100">
-                <Box
-                  paddingBlockStart={{ xs: 200, sm: 400, md: 800 }}
-                  paddingBlockEnd={{ xs: 200, sm: 400, md: 800 }}
-                >
+                <Box paddingBlockStart={{ xs: 200, sm: 400, md: 800 }} paddingBlockEnd={{ xs: 200, sm: 400, md: 800 }}>
                   <Text alignment="center" tone="subdued">
                     Brands I've worked with
                   </Text>
                   <InlineStack gap={{ xs: 0, sm: 100, lg: 800 }} align="center">
-                    <img
-                      className="logo chubbies"
-                      src="logo-chubbies.png"
-                      style={{ height: "40px" }}
-                    />
-                    <img
-                      className="logo rothys"
-                      src="logo-rothys.png"
-                      style={{ height: "35px", marginTop: "5px" }}
-                    />
-                    <img
-                      className="logo rothys"
-                      src="logo-rainbow.png"
-                      style={{ height: "35px" }}
-                    />
+                    <img className="logo chubbies" src="logo-chubbies.png" style={{ height: "40px" }} />
+                    <img className="logo rothys" src="logo-rothys.png" style={{ height: "35px", marginTop: "5px" }} />
+                    <img className="logo rothys" src="logo-rainbow.png" style={{ height: "35px" }} />
                   </InlineStack>
                 </Box>
               </BlockStack>
@@ -108,32 +84,23 @@ function App() {
                   <BlockStack gap="500">
                     <Card title="Order details" sectioned>
                       <BlockStack gap="300">
-                        <Text as="h2" variant="headingMd">
-                          Services
-                        </Text>
+                        <Text as="h2">Hey there!</Text>
 
                         <Text as="p" variant="bodyLg">
-                          Having built hundreds of workflow automations for
-                          Shopify using 3rd party apps, Flow, and custom code,
-                          if there's something that's possible to do in Shopify,
-                          I should be able to do it for you. And usually pretty
-                          quickly.
+                          Having built hundreds of workflow automations for Shopify using 3rd party apps, Flow, and
+                          custom code, if there's something that's possible to do in Shopify, I should be able to do it
+                          for you. And usually pretty quickly.
                         </Text>
                         <Text as="p" variant="bodyLg">
-                          Don't bang your head against the wall trying to
-                          articulate exactly what needs to happen. Figuring it
-                          out is my specialty.
+                          Don't bang your head against the wall trying to articulate exactly what needs to happen.
+                          Figuring it out is my specialty.
                         </Text>
                         <Text as="p" variant="bodyLg">
-                          So, if you're looking for help with anything along
-                          these lines, I can't wait to get started!
+                          So, if you're looking for help with anything along these lines, I can't wait to get started!
                         </Text>
                         <Text as="p" variant="bodyLg">
                           Hit me on{" "}
-                          <Link
-                            monochrome
-                            url="https://twitter.com/kalenjordan"
-                          >
+                          <Link monochrome url="https://twitter.com/kalenjordan">
                             twitter
                           </Link>
                           {",  "}
@@ -151,11 +118,7 @@ function App() {
                         </Box>
                         <InlineStack gap="200">
                           <span>
-                            <Thumbnail
-                              as="span"
-                              size="small"
-                              source="kalen-avatar-circle.png"
-                            />
+                            <Thumbnail as="span" size="small" source="kalen-avatar-circle.png" />
                           </span>
                           <Text as="p" variant="bodyLg">
                             Kalen Jordan
@@ -165,10 +128,7 @@ function App() {
                         </InlineStack>
                       </BlockStack>
                     </Card>
-                    <Card
-                      title="Order details"
-                      background="bg-surface-secondary"
-                    >
+                    <Card title="Order details" background="bg-surface-secondary">
                       <BlockStack gap="300">
                         <DescriptionList
                           items={[
@@ -181,8 +141,7 @@ function App() {
                                   Schedule a call
                                 </InlineStack>
                               ),
-                              description:
-                                "We'll jump on a call to talk through your needs.",
+                              description: "We'll jump on a call to talk through your needs.",
                             },
                             {
                               term: (
@@ -224,10 +183,7 @@ function App() {
                               term: (
                                 <InlineStack as="span" align="start" gap="200">
                                   <span>
-                                    <Icon
-                                      source={ReceiptRefundIcon}
-                                      as="span"
-                                    />
+                                    <Icon source={ReceiptRefundIcon} as="span" />
                                   </span>
                                   Refund?
                                 </InlineStack>
@@ -249,30 +205,29 @@ function App() {
                         <InlineStack gap="200">
                           <Avatar size="xs" source="flow-helper-icon.png" />
                           <Text as="h2" variant="headingMd">
-                            The Shopify App
+                            My Shopify App
                           </Text>
                         </InlineStack>
                         <Text as="p" variant="bodyLg">
-                          Flow Helper is a Shopify app that adds missing
-                          triggers and actions to use natively within Flow,
-                          including bulk flow runs.
+                          Flow Helper is a Shopify app that adds missing triggers and actions to use natively within
+                          Flow, including bulk flow runs.
                         </Text>
-                        <span>
-                          <Badge as="span" tone="info">
-                            Pending Review
-                          </Badge>
-                        </span>
+                        <InlineStack as="span" align="start" gap="200">
+                          <Button
+                            as="span"
+                            url="https://apps.shopify.com/flow-helper?show_store_picker=1"
+                            target="_blank"
+                          >
+                            Check it out
+                          </Button>
+                        </InlineStack>
                       </BlockStack>
                     </Card>
                     <Availability showBookCall={true} />
                     <Rates showButtons={false} />
                     <Card>
                       <Bleed marginInline="400" marginBlock="400">
-                        <video
-                          width="100%"
-                          controls="controls"
-                          poster="welcome.jpg"
-                        >
+                        <video width="100%" controls="controls" poster="welcome.jpg">
                           <source src="welcome.mp4" />
                         </video>
                       </Bleed>
@@ -280,6 +235,136 @@ function App() {
                   </BlockStack>
                 </Layout.Section>
               </Layout>
+              <Box paddingBlockStart={{ xs: 300, lg: 600 }}>
+                <BlockStack gap="500">
+                  <BlockStack gap="200">
+                    <Text as="h1" variant="headingXl" alignment="center" fontWeight="regular">
+                      Recent Work Highlights
+                    </Text>
+                    <Box paddingInline={{ xs: 600, lg: 3200 }}>
+                      <Text alignment="center" variant="headingMd" fontWeight="regular" className="subtitle">
+                        In addition to automation work, I also pick up some other development projects from time to time
+                        - here are some recent highlights.
+                      </Text>
+                    </Box>
+                  </BlockStack>
+                  <Text as="h2" variant="headingLg" alignment="center" fontWeight="regular"></Text>
+                  <div class="work-grid">
+                    <Card>
+                      <BlockStack gap="300">
+                        <InlineStack as="span" align="start" gap="200">
+                          <Icon source={ImportIcon} as="span" />
+                          <Text as="h2" variant="headingMd">
+                            NetSuite & Shopify Integration
+                          </Text>
+                        </InlineStack>
+                        <Text as="p" variant="bodyLg">
+                          I built a NetSuite integration that has involved mapping companies, company locations, price
+                          lists, products, and variants into Shopify.
+                        </Text>
+                        <InlineStack as="span" align="start" gap="200">
+                          <Badge as="span" tone="default">
+                            B2B
+                          </Badge>
+                          <Badge as="span" tone="default">
+                            Integrations
+                          </Badge>
+                          <Badge as="span" tone="default">
+                            Shopify Plus
+                          </Badge>
+                        </InlineStack>
+                      </BlockStack>
+                    </Card>
+                    <Card title="Tags" sectioned>
+                      <Bleed marginInline="400" marginBlock="400">
+                        <a href="https://milkxwhiskey.com/" target="_blank">
+                          <img
+                            src="/milkxwhiskey-tall.png"
+                            width="100%"
+                            alt="Milk x Whiskey"
+                            style={{ "margin-bottom": "-4px" }}
+                          />
+                        </a>
+                      </Bleed>
+                    </Card>
+                    <Card title="Subscription app development" sectioned className="testClass">
+                      <BlockStack gap="300">
+                        <InlineStack as="span" align="start" gap="200">
+                          <Icon source={ReplayIcon} as="span" />
+                          <Text as="h2" variant="headingMd">
+                            Subscription App Development
+                          </Text>
+                        </InlineStack>
+                        <Text as="p" variant="bodyLg">
+                          I'm in the process of building a Shopify app for a Subscriptions SaaS company that currently
+                          has apps available for Magento and Salesforce Commerce Cloud.
+                        </Text>
+                        <InlineStack as="span" align="start" gap="200">
+                          <Badge as="span" tone="default">
+                            App Development
+                          </Badge>
+                          <Badge as="span" tone="default">
+                            Frontend
+                          </Badge>
+                        </InlineStack>
+                      </BlockStack>
+                    </Card>
+                    <Card title="Tags" sectioned>
+                      <BlockStack gap="300">
+                        <InlineStack as="span" align="start" gap="200">
+                          <Icon source={ThemeIcon} as="span" />
+                          <Text as="h2" variant="headingMd">
+                            Shopify Theme Optimizations
+                          </Text>
+                        </InlineStack>
+                        <Text as="p" variant="bodyLg">
+                          I've made a number of improvements to the theme that{" "}
+                          <a href="https://milkxwhiskey.com/" target="_blank">
+                            this brand
+                          </a>{" "}
+                          purchased, including the product grid on the product page, conversion rate optimizations to
+                          the cart page, and more.
+                        </Text>
+                        <Text as="p" variant="bodyLg">
+                          "DUDE! That looks so good! YOU ROCK!" <br />
+                          -- The Client
+                        </Text>
+
+                        <InlineStack as="span" align="start" gap="200">
+                          <Badge as="span" tone="default">
+                            Frontend
+                          </Badge>
+                          <Badge as="span" tone="default">
+                            Theme Development
+                          </Badge>
+                        </InlineStack>
+                      </BlockStack>
+                    </Card>
+                    <Card title="Tags" sectioned>
+                      <BlockStack gap="300">
+                        <InlineStack as="span" align="start" gap="200">
+                          <Icon source={DiscountIcon} as="span" />
+                          <Text as="h2" variant="headingMd">
+                            Discount Functions App
+                          </Text>
+                        </InlineStack>
+                        <Text as="p" variant="bodyLg">
+                          An app that I started working on but haven't launched yet gives you access in the backend to a
+                          rule builder with infinite nesting of AND/OR logic for creating discounts.
+                        </Text>
+                        <InlineStack as="span" align="start" gap="200">
+                          <Badge as="span" tone="default">
+                            App Development
+                          </Badge>
+                          <Badge as="span" tone="default">
+                            Shopify Functions
+                          </Badge>
+                        </InlineStack>
+                      </BlockStack>
+                    </Card>
+                  </div>
+                </BlockStack>
+              </Box>
               <FooterHelp>
                 <BlockStack gap="500">
                   <BlockStack gap="400">
@@ -287,16 +372,8 @@ function App() {
                       Systems I've integrated with
                     </Text>
                     <InlineStack gap="600" align="center">
-                      <img
-                        className="logo shopify"
-                        src="logo-shopify.png"
-                        alt="Shopify Logo"
-                      />
-                      <img
-                        className="logo shopify-plus"
-                        src="logo-shopify-plus.png"
-                        alt="Shopify Plus Logo"
-                      />
+                      <img className="logo shopify" src="logo-shopify.png" alt="Shopify Logo" />
+                      <img className="logo shopify-plus" src="logo-shopify-plus.png" alt="Shopify Plus Logo" />
                       <img className="logo klaviyo" src="logo-klaviyo.png" />
                       <img className="logo xero" src="logo-xero.png" />
                       <img className="logo recharge" src="logo-recharge.png" />

@@ -126,14 +126,17 @@ function PostContent() {
                     </Card>
                     <Card>
                       <BlockStack gap="300">
-                        <Text as="p" variant="bodyLg" fontWeight="bold">
-                          #1 Save Customer To Data by MESA
-                        </Text>
+                        <BlockStack gap="0">
+                          <Text as="p" variant="bodyLg" fontWeight="bold">
+                            Workflow #1
+                          </Text>
+                          <Text>Save Customer To Data by MESA</Text>
+                        </BlockStack>
                         <Bleed marginInline="400">
                           <img src="/mesa/mesa-workflow1.png" alt="MESA Workflow" style={{ width: "100%" }} />
                         </Bleed>
                         <InlineStack as="span" align="start" gap="200">
-                          <Button as="span" url="/calendar">
+                          <Button as="span" url="/mesa/workflow1.zip" variant="primary">
                             Download Workflow #1
                           </Button>
                         </InlineStack>
@@ -141,14 +144,17 @@ function PostContent() {
                     </Card>
                     <Card>
                       <BlockStack gap="300">
-                        <Text as="p" variant="bodyLg" fontWeight="bold">
-                          #2 Tag Order Via Returns Form
-                        </Text>
+                        <BlockStack gap="0">
+                          <Text as="p" variant="bodyLg" fontWeight="bold">
+                            Workflow #2
+                          </Text>
+                          <Text>Tag Order Via Returns Form</Text>
+                        </BlockStack>
                         <Bleed marginInline="400">
                           <img src="/mesa/mesa-workflow2.png" alt="MESA Workflow" style={{ width: "100%" }} />
                         </Bleed>
                         <InlineStack as="span" align="start" gap="200">
-                          <Button as="span" url="/calendar">
+                          <Button as="span" url="/mesa/workflow2.zip" variant="primary">
                             Download Workflow #2
                           </Button>
                         </InlineStack>

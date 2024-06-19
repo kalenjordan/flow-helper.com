@@ -55,7 +55,7 @@ function App() {
                   Shopify Automation As&nbsp;A&nbsp;Service
                 </Text>
                 <Box paddingInline={{ xs: 600, lg: 3200 }}>
-                  <Text alignment="center" variant="headingMd" fontWeight="regular" className="subtitle">
+                  <Text alignment="center" variant="bodyLg" fontWeight="400" className="subtitle">
                     Whether using Shopify Flow, IPaaS systems, or writing custom - if you need any automation done in
                     Shopify or integrations with systems, I'm your guy.
                   </Text>
@@ -74,9 +74,9 @@ function App() {
                     Brands I've worked with
                   </Text>
                   <InlineStack gap={{ xs: 0, sm: 100, lg: 800 }} align="center">
-                    <img className="logo chubbies" src="logo-chubbies.png" style={{ height: "40px" }} />
-                    <img className="logo rothys" src="logo-rothys.png" style={{ height: "35px", marginTop: "5px" }} />
-                    <img className="logo rothys" src="logo-rainbow.png" style={{ height: "35px" }} />
+                    <img className="logo chubbies" src="logo-chubbies.png" style={{ height: "30px" }} />
+                    <img className="logo rothys" src="logo-rothys.png" style={{ height: "25px", marginTop: "3px" }} />
+                    <img className="logo rothys" src="logo-rainbow.png" style={{ height: "25px" }} />
                   </InlineStack>
                 </Box>
               </BlockStack>

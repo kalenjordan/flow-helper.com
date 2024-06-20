@@ -4,6 +4,7 @@ import Home from "./pages/Home.jsx";
 import Calendar from "./pages/Calendar.jsx";
 import Work from "./pages/Work.jsx";
 import TagOrderForReturnedProducts from "./posts/TagOrderForReturnedProducts.jsx";
+import AIProductHighlights from "./posts/AIProductHighlights.jsx";
 
 import { api } from "./lib/api";
 import { Provider } from "@gadgetinc/react";
@@ -31,6 +32,10 @@ const router = createBrowserRouter([
   {
     path: "/posts/tag-orders-for-returned-products-in-shopify-using-mesa",
     element: <TagOrderForReturnedProducts />,
+  },
+  {
+    path: "/posts/ai-generated-product-highlights-for-shopify",
+    element: <AIProductHighlights />,
   },
 ]);
 

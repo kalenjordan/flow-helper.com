@@ -16,11 +16,14 @@ import {
   FooterHelp,
   Frame,
   BlockStack,
+  VideoThumbnail,
 } from "@shopify/polaris";
 import "@shopify/polaris/build/esm/styles.css";
 import useDocumentTitle from "../useDocumentTitle";
+import { useState } from "react";
 
 function PostContent() {
+  const [playVideo, setPlayVideo] = useState(false);
   useDocumentTitle("Tag Orders For Returned Products In Shopify Using MESA");
 
   return (
@@ -61,21 +64,30 @@ function PostContent() {
                 <Layout.Section>
                   <Card>
                     <BlockStack gap="300">
-                      <div class="youtube-wrapper">
-                        <div class="h_iframe">
-                          <img class="ratio" src="http://placehold.it/16x9" />
-                          <iframe
-                            width="560"
-                            height="315"
-                            src="https://www.youtube.com/embed/DZs5ld0MLxU?si=8lOBibSNjA8zVjPi"
-                            title="YouTube video player"
-                            frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                            referrerpolicy="strict-origin-when-cross-origin"
-                            allowfullscreen
-                          ></iframe>
+                      {!playVideo && (
+                        <VideoThumbnail
+                          videoLength={217}
+                          thumbnailUrl="/mesa/thumbnail.jpeg"
+                          onClick={() => setPlayVideo(true)}
+                        />
+                      )}
+                      {playVideo && (
+                        <div class="youtube-wrapper">
+                          <div class="h_iframe">
+                            <img class="ratio" src="http://placehold.it/16x9" />
+                            <iframe
+                              width="560"
+                              height="315"
+                              src="https://www.youtube.com/embed/DZs5ld0MLxU?si=8lOBibSNjA8zVjPi"
+                              title="YouTube video player"
+                              frameborder="0"
+                              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                              referrerpolicy="strict-origin-when-cross-origin"
+                              allowfullscreen
+                            ></iframe>
+                          </div>
                         </div>
-                      </div>
+                      )}
                       <Text as="p" variant="bodyLg">
                         Managing returns can be a cumbersome process, especially for merchants who need to track
                         returned containers from their customers. If you're looking to simplify this process, MESA

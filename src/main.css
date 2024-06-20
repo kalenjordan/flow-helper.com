@@ -176,3 +176,15 @@ a {
 p a {
   color: black;
 }
+
+.Polaris-CalloutCard {
+  img {
+    border-radius: 5px;
+  }
+}
+
+.callout-hire-me {
+  img {
+    width: 40px;
+  }
+}

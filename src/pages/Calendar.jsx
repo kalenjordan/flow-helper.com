@@ -41,22 +41,22 @@ function Calendar() {
 
   return (
     <AppProvider i18n={enTranslations}>
+      <div class="breadcrumb subdued">
+        <a href="/">&lt; Home</a>
+      </div>
       <Frame>
         <Page>
           <Box paddingBlockStart={{ xs: 400, lg: 400 }}>
             <BlockStack gap="500">
               <BlockStack gap="200">
-                <Text as="h1" variant="headingXl" alignment="left" fontWeight="regular">
-                  <Link monochrome url="/">
-                    Home
-                  </Link>
-                  {" > "}
-                  Book a call
+                <Text as="h1" variant="headingXl" alignment="center" fontWeight="regular">
+                  Schedule A Call
                 </Text>
-                <Text alignment="left" variant="headingMd" fontWeight="regular" className="subtitle">
-                  Whether using Shopify Flow, IPaaS systems, or writin custom - if you need any automation done in
-                  Shopify or integrations with systems, I'm your guy.
-                </Text>
+                <Box paddingInline={{ xs: 600, lg: 3200 }}>
+                  <Text alignment="center" variant="bodyLg" fontWeight="400" className="subtitle">
+                    If you'd like to discuss your project, please book a call below. I look forward to chatting!
+                  </Text>
+                </Box>
               </BlockStack>
               <Layout>
                 <Layout.Section>

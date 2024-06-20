@@ -32,7 +32,7 @@ export function Availability({ showBookCall }) {
         >
           <BlockStack gap="300">
             <span>
-              <Badge tone="info">Available now</Badge>
+              <Badge tone="info">Available In July</Badge>
             </span>
             <Text as="p" variant="bodyLg">
               You can prepay by selecting a package or feel free to reach out with any questions.

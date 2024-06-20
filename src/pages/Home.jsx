@@ -43,6 +43,7 @@ import useDocumentTitle from "../useDocumentTitle";
 
 function App() {
   const [dismissed, setDismissed] = useState(false);
+  const [showNewsletter, setShowNewsletter] = useState(false);
 
   return (
     <AppProvider i18n={enTranslations}>
@@ -201,7 +202,36 @@ function App() {
                 </Layout.Section>
                 <Layout.Section variant="oneThird">
                   <BlockStack gap="500">
-                    <Card title="Tags" sectioned>
+                    <Card>
+                      <BlockStack gap="300">
+                        <InlineStack gap="200">
+                          <Text as="h2" variant="headingMd">
+                            The Shopify Automation Newsletter
+                          </Text>
+                        </InlineStack>
+                        <Text as="p" variant="bodyLg">
+                          Find out interesting ways to automate Shopify using Flow, Mechanic, and other tools.
+                        </Text>
+                        {!showNewsletter && (
+                          <InlineStack as="span" align="start" gap="200">
+                            <Button as="span" target="_blank" onClick={() => setShowNewsletter(true)}>
+                              Subscribe
+                            </Button>
+                          </InlineStack>
+                        )}
+                        {showNewsletter && (
+                          <iframe
+                            src="https://embeds.beehiiv.com/28464cbf-e8c2-4cac-ad4a-7353b446aab9?slim=true"
+                            data-test-id="beehiiv-embed"
+                            height="52"
+                            frameborder="0"
+                            scrolling="no"
+                            style={{ width: "100%" }}
+                          ></iframe>
+                        )}
+                      </BlockStack>
+                    </Card>
+                    <Card>
                       <BlockStack gap="300">
                         <InlineStack gap="200">
                           <Avatar size="xs" source="flow-helper-icon.png" />

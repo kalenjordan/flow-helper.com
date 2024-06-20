@@ -1,6 +1,18 @@
-import { Badge, Bleed, Box, Button, Grid, Card, Text, InlineStack, BlockStack, InlineGrid } from "@shopify/polaris";
+import {
+  Badge,
+  Bleed,
+  Box,
+  Icon,
+  Button,
+  Grid,
+  Card,
+  Text,
+  InlineStack,
+  BlockStack,
+  InlineGrid,
+} from "@shopify/polaris";
 import React from "react";
-import { CartIcon, CalendarIcon } from "@shopify/polaris-icons";
+import { CartIcon, CalendarIcon, PaymentIcon } from "@shopify/polaris-icons";
 
 export function Rates({ showButtons }) {
   return (
@@ -10,7 +22,12 @@ export function Rates({ showButtons }) {
           <BlockStack gap="300">
             <Bleed marginBlockStart="400" marginInline="400">
               <Box background="bg-surface-secondary" padding="400">
-                <Text variant="headingMd">Rates</Text>
+                <InlineStack gap="200">
+                  <Icon source={PaymentIcon} as="span" />
+                  <Text as="h2" variant="headingMd">
+                    Rates
+                  </Text>
+                </InlineStack>
               </Box>
             </Bleed>
             <Text as="h2" variant="headingMd">

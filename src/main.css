@@ -76,11 +76,6 @@ img.logo.xero {
       transition: background-color 0.3s ease-in-out;
     }
 
-    .Polaris-Icon {
-      margin: 0;
-      transition: color 0.3s ease-in-out;
-    }
-
     img {
       filter: grayscale(1);
       transition: filter 0.3s ease-in-out;
@@ -187,4 +182,16 @@ p a {
   img {
     width: 40px;
   }
+}
+
+.Polaris-InlineStack {
+  .Polaris-Icon {
+    margin: 0;
+    transition: color 0.3s ease-in-out;
+  }
+}
+
+.newsletter-card-title {
+  padding: 12px;
+  background-color: rgb(145, 208, 255);
 }

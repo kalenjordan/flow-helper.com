@@ -1,4 +1,4 @@
-import { Banner, Badge, Button, Card, Grid, Text, InlineStack, BlockStack } from "@shopify/polaris";
+import { Banner, Badge, Bleed, Box, Button, Card, Grid, Icon, Text, InlineStack, BlockStack } from "@shopify/polaris";
 import React from "react";
 import { CartIcon, CalendarIcon } from "@shopify/polaris-icons";
 import { useState } from "react";
@@ -9,36 +9,36 @@ export function Availability({ showBookCall }) {
   return (
     <>
       {dismissed ? null : (
-        <Banner
-          title="My current availability"
-          tone="info"
-          action={
-            showBookCall
-              ? {
-                  content: "Book a call",
-                  variant: "primary",
-                  url: "/calendar/",
-                  icon: CalendarIcon,
-                }
-              : null
-          }
-          secondaryAction={{
-            content: "Email me",
-            url: "mailto:kalenj@gmail.com",
-          }}
-          onDismiss={() => {
-            setDismissed(!dismissed);
-          }}
-        >
+        <Card>
           <BlockStack gap="300">
+            <Bleed marginBlockStart="400" marginInline="400">
+              <Box background="bg-surface-secondary" padding="400">
+                <InlineStack as="span" align="start" gap="200">
+                  <Icon source={CalendarIcon} as="span" />
+                  <Text as="h2" variant="headingMd">
+                    My current availability
+                  </Text>
+                </InlineStack>
+              </Box>
+            </Bleed>
+
+            <Text as="p" variant="bodyLg">
+              You can prepay by selecting a package or feel free to reach out with any questions. I look forward to
+              chatting!
+            </Text>
             <span>
               <Badge tone="info">Available In July</Badge>
             </span>
-            <Text as="p" variant="bodyLg">
-              You can prepay by selecting a package or feel free to reach out with any questions.
-            </Text>
+            <InlineStack as="span" align="start" gap="200">
+              <Button as="span" url="/calendar" target="_blank">
+                Book a call
+              </Button>
+              <Button as="span" url="mailto:kalenj@gmail.com" target="_blank">
+                Email me
+              </Button>
+            </InlineStack>
           </BlockStack>
-        </Banner>
+        </Card>
       )}
     </>
   );

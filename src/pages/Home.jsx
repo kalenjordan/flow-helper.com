@@ -204,18 +204,23 @@ function App() {
                   <BlockStack gap="500">
                     <Card>
                       <BlockStack gap="300">
-                        <InlineStack gap="200">
-                          <Text as="h2" variant="headingMd">
-                            The Shopify Automation Newsletter
-                          </Text>
-                        </InlineStack>
+                        <Bleed marginBlockStart={400} marginInline={400}>
+                          <div class="newsletter-card-title">
+                            <InlineStack gap="200">
+                              <Icon source={AutomationIcon} as="span" />
+                              <Text as="h2" variant="headingMd">
+                                The Shopify Automation Newsletter
+                              </Text>
+                            </InlineStack>
+                          </div>
+                        </Bleed>
                         <Text as="p" variant="bodyLg">
                           Find out interesting ways to automate Shopify using Flow, Mechanic, and other tools.
                         </Text>
                         {!showNewsletter && (
                           <InlineStack as="span" align="start" gap="200">
-                            <Button as="span" target="_blank" onClick={() => setShowNewsletter(true)}>
-                              Subscribe
+                            <Button as="span" variant="primary" target="_blank" onClick={() => setShowNewsletter(true)}>
+                              Subscribe For Free
                             </Button>
                           </InlineStack>
                         )}
@@ -233,12 +238,16 @@ function App() {
                     </Card>
                     <Card>
                       <BlockStack gap="300">
-                        <InlineStack gap="200">
-                          <Avatar size="xs" source="flow-helper-icon.png" />
-                          <Text as="h2" variant="headingMd">
-                            My Shopify App
-                          </Text>
-                        </InlineStack>
+                        <Bleed marginBlockStart="400" marginInline="400">
+                          <Box background="bg-surface-secondary" padding="400">
+                            <InlineStack gap="200">
+                              <Avatar size="xs" source="flow-helper-icon.png" />
+                              <Text as="h2" variant="headingMd">
+                                Flow Helper Shopify App
+                              </Text>
+                            </InlineStack>
+                          </Box>
+                        </Bleed>
                         <Text as="p" variant="bodyLg">
                           Flow Helper is a Shopify app that adds missing triggers and actions to use natively within
                           Flow, including bulk flow runs.
@@ -256,13 +265,6 @@ function App() {
                     </Card>
                     <Availability showBookCall={true} />
                     <Rates showButtons={false} />
-                    <Card>
-                      <Bleed marginInline="400" marginBlock="400">
-                        <video width="100%" controls="controls" poster="welcome.jpg">
-                          <source src="welcome.mp4" />
-                        </video>
-                      </Bleed>
-                    </Card>
                   </BlockStack>
                 </Layout.Section>
               </Layout>
@@ -341,6 +343,13 @@ function App() {
                       </BlockStack>
                     </Card>
                     <Card>
+                      <Bleed marginInline="400" marginBlock="400">
+                        <video width="100%" controls="controls" poster="welcome.jpg">
+                          <source src="welcome.mp4" />
+                        </video>
+                      </Bleed>
+                    </Card>
+                    <Card>
                       <BlockStack gap="300">
                         <InlineStack as="span" align="start" gap="200">
                           <Icon source={ThemeIcon} as="span" />
@@ -348,14 +357,6 @@ function App() {
                             Shopify Theme Optimizations
                           </Text>
                         </InlineStack>
-                        <Text as="p" variant="bodyLg">
-                          I've made a number of improvements to the theme that{" "}
-                          <a href="https://milkxwhiskey.com/" target="_blank">
-                            this brand
-                          </a>{" "}
-                          purchased, including the product grid on the product page, conversion rate optimizations to
-                          the cart page, and more.
-                        </Text>
                         <Text as="p" variant="bodyLg">
                           "DUDE! That looks so good! YOU ROCK!" <br />
                           -- The Client
@@ -381,7 +382,7 @@ function App() {
                         </InlineStack>
                         <Text as="p" variant="bodyLg">
                           An app that I started working on but haven't launched yet gives you access in the backend to a
-                          rule builder with infinite nesting of AND/OR logic for creating discounts.
+                          rule builder with infinite nesting of AND/OR logic.
                         </Text>
                         <InlineStack as="span" align="start" gap="200">
                           <Badge as="span" tone="default">
@@ -393,6 +394,7 @@ function App() {
                         </InlineStack>
                       </BlockStack>
                     </Card>
+                    {/*
                     <Card>
                       <a href="/posts/tag-orders-for-returned-products-in-shopify-using-mesa" target="_blank">
                         <BlockStack gap="300">
@@ -418,6 +420,7 @@ function App() {
                         </BlockStack>
                       </a>
                     </Card>
+                    */}
                   </div>
                 </BlockStack>
               </Box>

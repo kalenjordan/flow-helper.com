@@ -31,6 +31,20 @@ export function Rates({ showButtons }) {
               </Box>
             </Bleed>
             <Text as="h2" variant="headingMd">
+              1 Flow
+            </Text>
+            <Text as="p" variant="bodyLg">
+              I'll build or fix your Flow for you for a flat rate
+            </Text>
+            <span>
+              <Button icon={CartIcon} url="https://buy.stripe.com/00g6pSfhR7r136MaEU" target="_blank">
+                $120
+              </Button>
+            </span>
+          </BlockStack>
+
+          <BlockStack gap="300">
+            <Text as="h2" variant="headingMd">
               10 Hours
             </Text>
             <Text as="p" variant="bodyLg">

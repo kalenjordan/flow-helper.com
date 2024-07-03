@@ -29,7 +29,7 @@ function PostContent() {
 
   return (
     <AppProvider i18n={enTranslations}>
-      <div class="breadcrumb subdued">
+      <div className="breadcrumb subdued">
         <a href="/">&lt; Home</a>
       </div>
       <Frame>
@@ -62,30 +62,16 @@ function PostContent() {
                   <BlockStack gap="500">
                     <Card>
                       <BlockStack gap="300">
-                        {!playVideo && (
-                          <VideoThumbnail
-                            videoLength={217}
-                            thumbnailUrl="/mesa/thumbnail.jpeg"
-                            onClick={() => setPlayVideo(true)}
-                          />
-                        )}
-                        {playVideo && (
-                          <div class="youtube-wrapper">
-                            <div class="h_iframe">
-                              <img class="ratio" src="http://placehold.it/16x9" />
-                              <iframe
-                                width="560"
-                                height="315"
-                                src="https://www.youtube.com/embed/DZs5ld0MLxU?si=8lOBibSNjA8zVjPi"
-                                title="YouTube video player"
-                                frameborder="0"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                referrerpolicy="strict-origin-when-cross-origin"
-                                allowfullscreen
-                              ></iframe>
-                            </div>
-                          </div>
-                        )}
+                        <iframe
+                          width="560"
+                          height="315"
+                          src="https://www.youtube.com/embed/2mObsBCfPv4?si=krD_olkxK7MBcM7M"
+                          title="YouTube video player"
+                          frameborder="0"
+                          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                          referrerpolicy="strict-origin-when-cross-origin"
+                          allowfullscreen
+                        ></iframe>
                         <Text as="p" variant="bodyLg">
                           In this tutorial, we'll show you how to use MESA to generate AI-powered product highlights for
                           your Shopify store. By leveraging the power of AI, you can create compelling product
@@ -173,7 +159,7 @@ function PostContent() {
                         </InlineStack>
                       </BlockStack>
                     </Card>
-                    <div class="callout-hire-me">
+                    <div className="callout-hire-me">
                       <CalloutCard
                         title="Need help customizing MESA?"
                         illustration="/kalen-avatar-circle.png"

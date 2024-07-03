@@ -66,18 +66,20 @@ function PostContent() {
                   <BlockStack gap="500">
                     <Card>
                       <BlockStack gap="300">
-                        <div class="youtube-wrapper">
-                          <iframe
-                            width="560"
-                            height="315"
-                            src="https://www.youtube.com/embed/C2PM1B-_ZG4?si=SzthOXVMdb-wCQ3T"
-                            title="YouTube video player"
-                            frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                            referrerpolicy="strict-origin-when-cross-origin"
-                            allowfullscreen
-                          ></iframe>
-                        </div>
+                        <Bleed marginInline="400" marginBlockStart="400">
+                          <div class="youtube-wrapper">
+                            <iframe
+                              width="560"
+                              height="315"
+                              src="https://www.youtube.com/embed/C2PM1B-_ZG4?si=SzthOXVMdb-wCQ3T"
+                              title="YouTube video player"
+                              frameborder="0"
+                              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                              referrerpolicy="strict-origin-when-cross-origin"
+                              allowfullscreen
+                            ></iframe>
+                          </div>
+                        </Bleed>
                         <Text as="p" variant="bodyLg">
                           Managing returns can be a cumbersome process, especially for merchants who need to track
                           returned containers from their customers. If you're looking to simplify this process, MESA

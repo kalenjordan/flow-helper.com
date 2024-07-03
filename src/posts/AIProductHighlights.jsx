@@ -62,18 +62,20 @@ function PostContent() {
                   <BlockStack gap="500">
                     <Card>
                       <BlockStack gap="300">
-                        <div class="youtube-wrapper">
-                          <iframe
-                            width="560"
-                            height="315"
-                            src="https://www.youtube.com/embed/2mObsBCfPv4?si=krD_olkxK7MBcM7M"
-                            title="YouTube video player"
-                            frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                            referrerpolicy="strict-origin-when-cross-origin"
-                            allowfullscreen
-                          ></iframe>
-                        </div>
+                        <Bleed marginInline="400" marginBlockStart="400">
+                          <div class="youtube-wrapper">
+                            <iframe
+                              width="560"
+                              height="315"
+                              src="https://www.youtube.com/embed/2mObsBCfPv4?si=krD_olkxK7MBcM7M"
+                              title="YouTube video player"
+                              frameborder="0"
+                              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                              referrerpolicy="strict-origin-when-cross-origin"
+                              allowfullscreen
+                            ></iframe>
+                          </div>
+                        </Bleed>
                         <Text as="p" variant="bodyLg">
                           In this tutorial, we'll show you how to use MESA to generate AI-powered product highlights for
                           your Shopify store. By leveraging the power of AI, you can create compelling product

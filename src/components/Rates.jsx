@@ -37,8 +37,22 @@ export function Rates({ showButtons }) {
               I'll build or fix your Flow for you for a flat rate
             </Text>
             <span>
-              <Button icon={CartIcon} url="https://buy.stripe.com/00g6pSfhR7r136MaEU" target="_blank">
-                $120
+              <Button icon={CartIcon} url="https://buy.stripe.com/bIYdSk3z9h1B0YE5kD" target="_blank">
+                $140
+              </Button>
+            </span>
+          </BlockStack>
+
+          <BlockStack gap="300">
+            <Text as="h2" variant="headingMd">
+              5 Hours
+            </Text>
+            <Text as="p" variant="bodyLg">
+              Let's get off to the races with a quick win.
+            </Text>
+            <span>
+              <Button icon={CartIcon} url="https://buy.stripe.com/aEU4hK5Hh4eP6iYdRa" target="_blank">
+                $650
               </Button>
             </span>
           </BlockStack>

@@ -34,7 +34,7 @@ export function Rates({ showButtons }) {
               1 Flow
             </Text>
             <Text as="p" variant="bodyLg">
-              I'll build or fix your Flow for you for a flat rate
+              Most flows that are not overly complicated will take me under an hour to fix or build.
             </Text>
             <span>
               <Button icon={CartIcon} url="https://buy.stripe.com/bIYdSk3z9h1B0YE5kD" target="_blank">

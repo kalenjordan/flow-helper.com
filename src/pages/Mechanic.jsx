@@ -3,10 +3,8 @@ import "../main.css";
 import enTranslations from "@shopify/polaris/locales/en.json";
 import {
   AppProvider,
-  Badge,
   Bleed,
   Box,
-  Button,
   Card,
   DescriptionList,
   Divider,
@@ -23,18 +21,7 @@ import {
   Avatar,
 } from "@shopify/polaris";
 import "@shopify/polaris/build/esm/styles.css";
-import {
-  AutomationIcon,
-  ChatIcon,
-  DiscountIcon,
-  ReceiptRefundIcon,
-  ReplayIcon,
-  ReturnIcon,
-  ThemeIcon,
-  ImportIcon,
-  PaymentIcon,
-  WorkIcon,
-} from "@shopify/polaris-icons";
+import { ChatIcon, ReceiptRefundIcon, ReplayIcon, StarFilledIcon, PaymentIcon, WorkIcon } from "@shopify/polaris-icons";
 import { useState } from "react";
 import { SimpleIndexTableExample } from "../components/MechanicIndexTable";
 import { Availability } from "../components/Availability";
@@ -204,42 +191,63 @@ function App() {
                 </Layout.Section>
                 <Layout.Section variant="oneThird">
                   <BlockStack gap="500">
-                    <Card>
-                      <BlockStack gap="300">
-                        <Bleed marginBlockStart={400} marginInline={400}>
-                          <div class="newsletter-card-title">
-                            <InlineStack gap="200">
-                              <Icon source={AutomationIcon} as="span" />
-                              <Text as="h2" variant="headingMd">
-                                The Shopify Automation Newsletter
-                              </Text>
-                            </InlineStack>
-                          </div>
-                        </Bleed>
-                        <Text as="p" variant="bodyLg">
-                          Find out interesting ways to automate Shopify using Flow, Mechanic, and other tools.
-                        </Text>
-                        {!showNewsletter && (
-                          <InlineStack as="span" align="start" gap="200">
-                            <Button as="span" variant="primary" target="_blank" onClick={() => setShowNewsletter(true)}>
-                              Subscribe For Free
-                            </Button>
-                          </InlineStack>
-                        )}
-                        {showNewsletter && (
-                          <iframe
-                            src="https://embeds.beehiiv.com/28464cbf-e8c2-4cac-ad4a-7353b446aab9?slim=true"
-                            data-test-id="beehiiv-embed"
-                            height="52"
-                            frameborder="0"
-                            scrolling="no"
-                            style={{ width: "100%" }}
-                          ></iframe>
-                        )}
-                      </BlockStack>
-                    </Card>
                     <Availability showBookCall={true} />
                     <RatesMechanic showButtons={false} />
+                    <Card>
+                      <BlockStack gap="300">
+                        <InlineStack as="span" align="start" gap="0">
+                          <span>
+                            <Icon source={StarFilledIcon} as="span" />
+                          </span>
+                          <span>
+                            <Icon source={StarFilledIcon} as="span" />
+                          </span>
+                          <span>
+                            <Icon source={StarFilledIcon} as="span" />
+                          </span>
+                          <span>
+                            <Icon source={StarFilledIcon} as="span" />
+                          </span>
+                          <span>
+                            <Icon source={StarFilledIcon} as="span" />
+                          </span>
+                        </InlineStack>
+
+                        <Text as="p" variant="bodyLg">
+                          "I had the pleasure of working with Kalen, and I must say, Kalen is the best! The effort and
+                          dedication put into completing my project were truly commendable. I am incredibly grateful for
+                          all the hard work and the successful outcome. I look forward to collaborating with Kalen again
+                          on future automation projects. Highly recommended!"
+                        </Text>
+                      </BlockStack>
+                    </Card>
+                    <Card>
+                      <BlockStack gap="300">
+                        <InlineStack as="span" align="start" gap="0">
+                          <span>
+                            <Icon source={StarFilledIcon} as="span" />
+                          </span>
+                          <span>
+                            <Icon source={StarFilledIcon} as="span" />
+                          </span>
+                          <span>
+                            <Icon source={StarFilledIcon} as="span" />
+                          </span>
+                          <span>
+                            <Icon source={StarFilledIcon} as="span" />
+                          </span>
+                          <span>
+                            <Icon source={StarFilledIcon} as="span" />
+                          </span>
+                        </InlineStack>
+
+                        <Text as="p" variant="bodyLg">
+                          "Kalen was very prompt and knowledgeable. He made quick work of an issue I was having sending
+                          order information to fulfillment partners automatically. Went above and beyond to help in
+                          other areas of automation as well."
+                        </Text>
+                      </BlockStack>
+                    </Card>
                   </BlockStack>
                 </Layout.Section>
               </Layout>

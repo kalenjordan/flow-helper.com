@@ -25,7 +25,7 @@ import {
 import "@shopify/polaris/build/esm/styles.css";
 import {
   AutomationIcon,
-  CalendarIcon,
+  ChatIcon,
   DiscountIcon,
   ReceiptRefundIcon,
   ReplayIcon,
@@ -139,12 +139,13 @@ function App() {
                               term: (
                                 <InlineStack as="span" align="start" gap="200">
                                   <span>
-                                    <Icon source={CalendarIcon} as="span" />
+                                    <Icon source={ChatIcon} as="span" />
                                   </span>
-                                  Schedule a call
+                                  Estimate
                                 </InlineStack>
                               ),
-                              description: "We'll jump on a call to talk through your needs.",
+                              description:
+                                "Let me know what you're looking to get done and I'll give you a rough estimate for the work.",
                             },
                             {
                               term: (

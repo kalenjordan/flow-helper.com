@@ -18,7 +18,7 @@ export function Rates({ showButtons }) {
   return (
     <>
       <Card>
-        <InlineStack column={3} gap="500">
+        <BlockStack gap="500">
           <BlockStack gap="300">
             <Bleed marginBlockStart="400" marginInline="400">
               <Box background="bg-surface-secondary" padding="400">
@@ -70,7 +70,7 @@ export function Rates({ showButtons }) {
               </Button>
             </span>
           </BlockStack>
-        </InlineStack>
+        </BlockStack>
       </Card>
     </>
   );

@@ -2,6 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import Home from "./pages/Home.jsx";
 import Calendar from "./pages/Calendar.jsx";
+import Mechanic from "./pages/Mechanic.jsx";
 import Work from "./pages/Work.jsx";
 import TagOrderForReturnedProducts from "./posts/TagOrderForReturnedProducts.jsx";
 import AIProductHighlights from "./posts/AIProductHighlights.jsx";
@@ -20,6 +21,10 @@ const router = createBrowserRouter([
   {
     path: "/calendar",
     element: <Calendar />,
+  },
+  {
+    path: "/mechanic",
+    element: <Mechanic />,
   },
   {
     path: "/hire",

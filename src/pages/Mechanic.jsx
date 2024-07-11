@@ -90,16 +90,16 @@ function App() {
                         <Text as="h2">Hey there!</Text>
 
                         <Text as="p" variant="bodyLg">
-                          Having built hundreds of workflow automations for Shopify using Mechanic, Flow, custom code,
-                          and other tools, if there's something that's possible to do in Shopify, I can do it for you.
-                          And usually pretty damn quick.
+                          Having built hundreds of workflow automations for Shopify using Mechanic, custom code, and
+                          other tools, if there's something that's possible to do in Shopify, I can do it for you. And
+                          usually prettttty quick.
                         </Text>
                         <Text as="p" variant="bodyLg">
-                          Don't bang your head against the wall trying to articulate exactly what needs to happen.
-                          Figuring it out is my specialty.
+                          Don't bang your head against the wall trying to articulate exactly what needs to happen. Just
+                          explain it to me in plain English and I'll figure it out.
                         </Text>
                         <Text as="p" variant="bodyLg">
-                          So, if you're looking for help with anything along these lines, I can't wait to get started!
+                          Can't wait to hear from you!
                         </Text>
                         <Text as="p" variant="bodyLg">
                           Hit me on{" "}

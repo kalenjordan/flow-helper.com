@@ -45,6 +45,8 @@ function App() {
   const [dismissed, setDismissed] = useState(false);
   const [showNewsletter, setShowNewsletter] = useState(false);
 
+  // useDocumentTitle("Hire A Shopify Mechanic | Kalen Jordan");
+
   return (
     <AppProvider i18n={enTranslations}>
       <Frame>

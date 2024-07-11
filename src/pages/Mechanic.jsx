@@ -88,21 +88,6 @@ function App() {
                         <Text as="p" variant="bodyLg">
                           Can't wait to hear from you!
                         </Text>
-                        <Text as="p" variant="bodyLg">
-                          Hit me on{" "}
-                          <Link monochrome url="https://twitter.com/kalenjordan">
-                            twitter
-                          </Link>
-                          {",  "}
-                          <Link monochrome url="https://linkedin.com/in/kalen">
-                            linkedin
-                          </Link>
-                          {", or "}
-                          <Link monochrome url="mailto:kalenj@gmail.com">
-                            email
-                          </Link>
-                          .
-                        </Text>
                         <Box padding="200">
                           <Divider borderColor="border" />
                         </Box>
@@ -152,11 +137,10 @@ function App() {
                                   <span>
                                     <Icon source={WorkIcon} as="span" />
                                   </span>
-                                  Begin work
+                                  Complete work
                                 </InlineStack>
                               ),
-                              description:
-                                "I'll begin work and track hours on a daily basis so you have visibility into what's happening.",
+                              description: "I'll begin work and usually knock it out within a day or two",
                             },
                             {
                               term: (
@@ -170,29 +154,18 @@ function App() {
                               description:
                                 "Once we're done with the initial batch of hours, if things are going well and you have more work to get done, we can make it a monthly retainer.",
                             },
-                            {
-                              term: (
-                                <InlineStack as="span" align="start" gap="200">
-                                  <span>
-                                    <Icon source={ReceiptRefundIcon} as="span" />
-                                  </span>
-                                  Refund?
-                                </InlineStack>
-                              ),
-                              description:
-                                "At any time, you can request a refund for any of the unused hours that were prepaid.",
-                            },
                           ]}
                         />
                       </BlockStack>
                     </Card>
+                    <RatesMechanic showButtons={false} />
+
                     {SimpleIndexTableExample()}
                   </BlockStack>
                 </Layout.Section>
                 <Layout.Section variant="oneThird">
                   <BlockStack gap="500">
                     <Availability showBookCall={true} />
-                    <RatesMechanic showButtons={false} />
                     <Card>
                       <BlockStack gap="300">
                         <InlineStack as="span" align="start" gap="0">

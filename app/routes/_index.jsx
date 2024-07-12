@@ -43,6 +43,10 @@ export const meta = () => {
   return [
     { title: "Shopify Automation As A Service | Flow" },
     {
+      name: "viewport",
+      content: "width=device-width, initial-scale=1.0",
+    },
+    {
       name: "description",
       content:
         "Whether you're looking for help with Shopify Flow, other automation apps, or custom integration, I'm your guy!",

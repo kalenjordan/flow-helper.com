@@ -341,13 +341,13 @@ export default function Index() {
                           lists, products, and variants into Shopify.
                         </Text>
                         <InlineStack as="span" align="start" gap="200">
-                          <Badge as="span" tone="default">
+                          <Badge as="span" tone="default" key="B2B">
                             B2B
                           </Badge>
-                          <Badge as="span" tone="default">
+                          <Badge as="span" tone="default" key="Integrations">
                             Integrations
                           </Badge>
-                          <Badge as="span" tone="default">
+                          <Badge as="span" tone="default" key="Shopify Plus">
                             Shopify Plus
                           </Badge>
                         </InlineStack>
@@ -378,10 +378,10 @@ export default function Index() {
                           has apps available for Magento and Salesforce Commerce Cloud.
                         </Text>
                         <InlineStack as="span" align="start" gap="200">
-                          <Badge as="span" tone="default">
+                          <Badge as="span" tone="default" key="App Development">
                             App Development
                           </Badge>
-                          <Badge as="span" tone="default">
+                          <Badge as="span" tone="default" key="Frontend">
                             Frontend
                           </Badge>
                         </InlineStack>
@@ -408,10 +408,10 @@ export default function Index() {
                         </Text>
 
                         <InlineStack as="span" align="start" gap="200">
-                          <Badge as="span" tone="default">
+                          <Badge as="span" tone="default" key="Frontend">
                             Frontend
                           </Badge>
-                          <Badge as="span" tone="default">
+                          <Badge as="span" tone="default" key="Theme Development">
                             Theme Development
                           </Badge>
                         </InlineStack>
@@ -430,10 +430,10 @@ export default function Index() {
                           rule builder with infinite nesting of AND/OR logic.
                         </Text>
                         <InlineStack as="span" align="start" gap="200">
-                          <Badge as="span" tone="default">
+                          <Badge as="span" tone="default" key="App Development">
                             App Development
                           </Badge>
-                          <Badge as="span" tone="default">
+                          <Badge as="span" tone="default" key="Shopify Functions">
                             Shopify Functions
                           </Badge>
                         </InlineStack>
@@ -469,25 +469,23 @@ export default function Index() {
                   </div>
                 </BlockStack>
               </Box>
-              <FooterHelp>
-                <BlockStack gap="500">
-                  <BlockStack gap="400">
-                    <Text alignment="center" tone="subdued">
-                      Systems I've integrated with
-                    </Text>
-                    <InlineStack gap="600" align="center">
-                      <img className="logo shopify" src="logo-shopify.png" alt="Shopify Logo" />
-                      <img className="logo shopify-plus" src="logo-shopify-plus.png" alt="Shopify Plus Logo" />
-                      <img className="logo klaviyo" src="logo-klaviyo.png" />
-                      <img className="logo xero" src="logo-xero.png" />
-                      <img className="logo recharge" src="logo-recharge.png" />
-                      <img className="logo" src="logo-netsuite.png" />
-                    </InlineStack>
-                  </BlockStack>
-                  <Divider borderColor="border" />
-                  <Text alignment="center">Made with 💚 by Kalen Jordan</Text>
+              <BlockStack gap="500">
+                <BlockStack gap="400">
+                  <Text alignment="center" tone="subdued">
+                    Systems I've integrated with
+                  </Text>
+                  <InlineStack gap="600" align="center">
+                    <img className="logo shopify" src="logo-shopify.png" alt="Shopify Logo" />
+                    <img className="logo shopify-plus" src="logo-shopify-plus.png" alt="Shopify Plus Logo" />
+                    <img className="logo klaviyo" src="logo-klaviyo.png" />
+                    <img className="logo xero" src="logo-xero.png" />
+                    <img className="logo recharge" src="logo-recharge.png" />
+                    <img className="logo" src="logo-netsuite.png" />
+                  </InlineStack>
                 </BlockStack>
-              </FooterHelp>
+                <Divider borderColor="border" />
+                <Text alignment="center">Made with love by Kalen Jordan</Text>
+              </BlockStack>
             </BlockStack>
           </Box>
         </Page>

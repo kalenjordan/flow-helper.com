@@ -71,7 +71,9 @@ export function TemplateList() {
                 <IndexTable.Cell>
                   <InlineStack gap="100">
                     {template.tags.map((tag) => (
-                      <Badge tone={toneForTag(tag)}>{tag}</Badge>
+                      <Badge tone={toneForTag(tag)} key={tag}>
+                        {tag}
+                      </Badge>
                     ))}
                   </InlineStack>
                 </IndexTable.Cell>

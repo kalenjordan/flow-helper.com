@@ -29,6 +29,10 @@ import Rates from "../components/ratesMechanic";
 export const meta = () => {
   return [
     { title: "Hire A Shopify Mechanic | Kalen Jordan" },
+    {
+      name: "viewport",
+      content: "width=device-width, initial-scale=1.0",
+    },
     { name: "description", content: "I specialize in automations for Shopify and love Mechanic!" },
   ];
 };

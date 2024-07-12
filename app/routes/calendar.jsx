@@ -25,6 +25,10 @@ import Availability from "../components/availability";
 export const meta = () => {
   return [
     { title: "Book A Call With Kalen" },
+    {
+      name: "viewport",
+      content: "width=device-width, initial-scale=1.0",
+    },
     { name: "description", content: "If you'd like to discuss your project, please book a call below. I look forward to chatting!" },
   ];
 };

@@ -41,8 +41,9 @@ import styles from "../main.css?url";
 
 export const meta = () => {
   return [
-    { title: "Flow Helper | Shopify Automation As A Service" },
-    { name: "description", content: "Welcome to Remix!" },
+    { title: "Shopify Automation As A Service | Flow" },
+  
+    { name: "description", content: "Whether you're looking for help with Shopify Flow, other automation apps, or custom integration, I'm your guy!" },
   ];
 };
 

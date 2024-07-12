@@ -25,7 +25,7 @@ import Availability from "../components/availability";
 export const meta = () => {
   return [
     { title: "Book A Call With Kalen" },
-    { name: "description", content: "Schedule a call to discuss your Shopify automation needs!" },
+    { name: "description", content: "If you'd like to discuss your project, please book a call below. I look forward to chatting!" },
   ];
 };
 

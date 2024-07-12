@@ -42,8 +42,11 @@ import styles from "../main.css?url";
 export const meta = () => {
   return [
     { title: "Shopify Automation As A Service | Flow" },
-  
-    { name: "description", content: "Whether you're looking for help with Shopify Flow, other automation apps, or custom integration, I'm your guy!" },
+    {
+      name: "description",
+      content:
+        "Whether you're looking for help with Shopify Flow, other automation apps, or custom integration, I'm your guy!",
+    },
   ];
 };
 
@@ -61,7 +64,7 @@ export default function Index() {
             <BlockStack gap="500">
               <BlockStack gap="200">
                 <Text as="h1" variant="headingXl" alignment="center" fontWeight="regular">
-                  Shopify Automation As&nbsp;A&nbsp;Service
+                  Shopify Automation As A Service
                 </Text>
                 <Box paddingInline={{ xs: 600, lg: 3200 }}>
                   <Text alignment="center" variant="bodyLg" fontWeight="400" className="subtitle">

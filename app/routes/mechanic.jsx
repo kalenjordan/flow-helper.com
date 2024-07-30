@@ -214,6 +214,34 @@ export default function Index() {
                         </InlineStack>
 
                         <Text as="p" variant="bodyLg">
+                          "Efficient Communication, Impactful Results! We activate inventory at our 19 retail stores for
+                          sale on our digital channels during store closure hours. Kalen helped create an automated
+                          workflow that completed these tasks at set times daily which will reduce the possibility of
+                          error and streamline our process. Huge help! "
+                        </Text>
+                      </BlockStack>
+                    </Card>
+                    <Card>
+                      <BlockStack gap="300">
+                        <InlineStack as="span" align="start" gap="0">
+                          <span>
+                            <Icon source={StarFilledIcon} as="span" />
+                          </span>
+                          <span>
+                            <Icon source={StarFilledIcon} as="span" />
+                          </span>
+                          <span>
+                            <Icon source={StarFilledIcon} as="span" />
+                          </span>
+                          <span>
+                            <Icon source={StarFilledIcon} as="span" />
+                          </span>
+                          <span>
+                            <Icon source={StarFilledIcon} as="span" />
+                          </span>
+                        </InlineStack>
+
+                        <Text as="p" variant="bodyLg">
                           "Kalen was very prompt and knowledgeable. He made quick work of an issue I was having sending
                           order information to fulfillment partners automatically. Went above and beyond to help in
                           other areas of automation as well."

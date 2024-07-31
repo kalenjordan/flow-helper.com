@@ -38,6 +38,8 @@ import { TemplateList } from "../components/templates";
 import { Availability } from "../components/availability";
 import Rates from "../components/rates";
 import styles from "../main.css?url";
+import { PrismaClient } from "@prisma/client";
+import { useLoaderData } from "@remix-run/react";
 
 export const meta = () => {
   return [
@@ -56,7 +58,16 @@ export const meta = () => {
 
 export const links = () => [{ rel: "stylesheet", href: styles }];
 
+export async function loader({ params }) {
+  const prisma = new PrismaClient();
+  const templates = await prisma.template.findMany();
+
+  return templates;
+}
+
 export default function Index() {
+  const templates = useLoaderData();
+
   const [dismissed, setDismissed] = useState(false);
   const [showNewsletter, setShowNewsletter] = useState(false);
 
@@ -215,7 +226,7 @@ export default function Index() {
                         />
                       </BlockStack>
                     </Card>
-                    {TemplateList()}
+                    {TemplateList(templates)}
                   </BlockStack>
                 </Layout.Section>
                 <Layout.Section variant="oneThird">

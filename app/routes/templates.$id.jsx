@@ -31,8 +31,7 @@ import { useFindMany, useMaybeFindOne } from "@gadgetinc/react";
 import { useLoaderData } from "@remix-run/react";
 
 export async function loader({ params }) {
-  console.log("params", params);
-  const template = await prisma.template.findUnique({
+  const template = prisma.template.findUnique({
     where: {
       id: parseInt(params.id),
     },

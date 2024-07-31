@@ -23,20 +23,26 @@ import {
   Avatar,
 } from "@shopify/polaris";
 import "@shopify/polaris/build/esm/styles.css";
+import { PrismaClient } from "@prisma/client";
+const prisma = new PrismaClient();
 
 import { api } from "../api";
 import { useFindMany, useMaybeFindOne } from "@gadgetinc/react";
 import { useLoaderData } from "@remix-run/react";
 
 export async function loader({ params }) {
-  return {
-    id: params.id,
-  };
+  console.log("params", params);
+  const template = await prisma.template.findUnique({
+    where: {
+      id: parseInt(params.id),
+    },
+  });
+
+  return template;
 }
 
 export default function Index() {
-  const params = useLoaderData();
-  const [{ data, fetching, error }] = useMaybeFindOne(api.template, params.id);
+  const template = useLoaderData();
 
   return (
     <AppProvider i18n={enTranslations}>
@@ -50,11 +56,11 @@ export default function Index() {
               <BlockStack gap="200">
                 {/*data: {JSON.stringify(data)}*/}
                 <Text as="h1" variant="headingXl" alignment="center" fontWeight="regular">
-                  {fetching ? "..." : data.name}
+                  {template.name}
                 </Text>
                 <Box paddingInline={{ xs: 600, lg: 3200 }}>
                   <Text alignment="center" variant="bodyLg" fontWeight="400" className="subtitle">
-                    {fetching ? "..." : data.description}
+                    {template.description}
                   </Text>
                 </Box>
               </BlockStack>

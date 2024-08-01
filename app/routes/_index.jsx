@@ -115,12 +115,9 @@ export default function Index() {
                         <Text as="h2">Hey there!</Text>
 
                         <Text as="p" variant="bodyLg">
-                          Having built hundreds of workflow automations for Shopify using Flow,{" "}
-                          <Link monochrome url="/mechanic">
-                            Mechanic
-                          </Link>
-                          , MESA, custom code, and other automation apps...if there's something that's possible to do in
-                          Shopify, I should be able to do it for you. And usually pretty quickly.
+                          Having built hundreds of workflow automations for Shopify using Flow, Mechanic , MESA, custom
+                          code, and other automation apps...if there's something that's possible to do in Shopify, I
+                          should be able to do it for you. And usually pretty quickly.
                         </Text>
                         <Text as="p" variant="bodyLg">
                           Don't bang your head against the wall trying to articulate exactly what needs to happen.

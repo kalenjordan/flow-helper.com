@@ -29,7 +29,7 @@ export function Rates({ showButtons }) {
               </InlineStack>
             </Box>
           </Bleed>
-          <InlineGrid gap="500" columns={3}>
+          <InlineGrid gap="500" columns={4}>
             <BlockStack gap="300">
               <Text as="h2" variant="headingMd">
                 1 Hour
@@ -38,8 +38,8 @@ export function Rates({ showButtons }) {
                 Simple Mechanic tasks
               </Text>
               <span>
-                <Button icon={CartIcon} url="https://buy.stripe.com/00g6pSfhR7r136MaEU" target="_blank">
-                  $120
+                <Button icon={CartIcon} url="https://buy.stripe.com/14kg0s1r1dPp9vabJe" target="_blank">
+                  $130
                 </Button>
               </span>
             </BlockStack>
@@ -51,8 +51,8 @@ export function Rates({ showButtons }) {
                 Medium-complexity tasks
               </Text>
               <span>
-                <Button icon={CartIcon} url="https://buy.stripe.com/5kA01u2v5aDdaze28A" target="_blank">
-                  $330
+                <Button icon={CartIcon} url="https://buy.stripe.com/28o29C3z94eP5eUcNj" target="_blank">
+                  $360
                 </Button>
               </span>
             </BlockStack>
@@ -65,8 +65,22 @@ export function Rates({ showButtons }) {
                 Complex Mechanic tasks
               </Text>
               <span>
-                <Button icon={CartIcon} url="https://buy.stripe.com/14k4hKglVcLldLq8wZ" target="_blank">
-                  $500
+                <Button icon={CartIcon} url="https://buy.stripe.com/8wM15y0mXh1BgXC7t0" target="_blank">
+                  $550
+                </Button>
+              </span>
+            </BlockStack>
+
+            <BlockStack gap="300">
+              <Text as="h2" variant="headingMd">
+                10 Hours
+              </Text>
+              <Text as="p" variant="bodyLg">
+                Complex-er Mechanic tasks
+              </Text>
+              <span>
+                <Button icon={CartIcon} url="https://buy.stripe.com/14k6pS7PpeTtgXC00d" target="_blank">
+                  $1,000
                 </Button>
               </span>
             </BlockStack>

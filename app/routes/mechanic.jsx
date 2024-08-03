@@ -25,6 +25,7 @@ import { useState } from "react";
 import { Table } from "../components/mechanicTemplates";
 import { Availability } from "../components/availability";
 import Rates from "../components/ratesMechanic";
+import Testimonials from "../components/testimonials";
 
 export const meta = () => {
   return [
@@ -43,9 +44,6 @@ export default function Index() {
 
   return (
     <AppProvider i18n={enTranslations}>
-      <div class="breadcrumb subdued">
-        <a href="/">&lt; Home</a>
-      </div>
       <Frame>
         <Page>
           <Box paddingBlockStart={{ xs: 400, lg: 400 }}>
@@ -158,118 +156,17 @@ export default function Index() {
                         />
                       </BlockStack>
                     </Card>
-                    <Rates showButtons={false} />
                     {Table()}
                   </BlockStack>
                 </Layout.Section>
                 <Layout.Section variant="oneThird">
                   <BlockStack gap="500">
                     <Availability showBookCall={true} />
-                    <Card>
-                      <BlockStack gap="300">
-                        <InlineStack as="span" align="start" gap="0">
-                          <span>
-                            <Icon source={StarFilledIcon} as="span" />
-                          </span>
-                          <span>
-                            <Icon source={StarFilledIcon} as="span" />
-                          </span>
-                          <span>
-                            <Icon source={StarFilledIcon} as="span" />
-                          </span>
-                          <span>
-                            <Icon source={StarFilledIcon} as="span" />
-                          </span>
-                          <span>
-                            <Icon source={StarFilledIcon} as="span" />
-                          </span>
-                        </InlineStack>
-
-                        <Text as="p" variant="bodyLg">
-                          "I had the pleasure of working with Kalen, and I must say, Kalen is the best! The effort and
-                          dedication put into completing my project were truly commendable. I am incredibly grateful for
-                          all the hard work and the successful outcome. I look forward to collaborating with Kalen again
-                          on future automation projects. Highly recommended!"
-                        </Text>
-                      </BlockStack>
-                    </Card>
-                    <Card>
-                      <BlockStack gap="300">
-                        <InlineStack as="span" align="start" gap="0">
-                          <span>
-                            <Icon source={StarFilledIcon} as="span" />
-                          </span>
-                          <span>
-                            <Icon source={StarFilledIcon} as="span" />
-                          </span>
-                          <span>
-                            <Icon source={StarFilledIcon} as="span" />
-                          </span>
-                          <span>
-                            <Icon source={StarFilledIcon} as="span" />
-                          </span>
-                          <span>
-                            <Icon source={StarFilledIcon} as="span" />
-                          </span>
-                        </InlineStack>
-
-                        <Text as="p" variant="bodyLg">
-                          "Efficient Communication, Impactful Results! We activate inventory at our 19 retail stores for
-                          sale on our digital channels during store closure hours. Kalen helped create an automated
-                          workflow that completed these tasks at set times daily which will reduce the possibility of
-                          error and streamline our process. Huge help! "
-                        </Text>
-                      </BlockStack>
-                    </Card>
-                    <Card>
-                      <BlockStack gap="300">
-                        <InlineStack as="span" align="start" gap="0">
-                          <span>
-                            <Icon source={StarFilledIcon} as="span" />
-                          </span>
-                          <span>
-                            <Icon source={StarFilledIcon} as="span" />
-                          </span>
-                          <span>
-                            <Icon source={StarFilledIcon} as="span" />
-                          </span>
-                          <span>
-                            <Icon source={StarFilledIcon} as="span" />
-                          </span>
-                          <span>
-                            <Icon source={StarFilledIcon} as="span" />
-                          </span>
-                        </InlineStack>
-
-                        <Text as="p" variant="bodyLg">
-                          "Kalen was very prompt and knowledgeable. He made quick work of an issue I was having sending
-                          order information to fulfillment partners automatically. Went above and beyond to help in
-                          other areas of automation as well."
-                        </Text>
-                      </BlockStack>
-                    </Card>
-                    <Card title="Order details" sectioned>
-                      <BlockStack gap="300">
-                        <Text as="h2" variant="headingMd">
-                          "Kalen is a force! Smart, motivated, and kind—a perfect combination."
-                        </Text>
-
-                        <InlineStack gap="200">
-                          <span>
-                            <Thumbnail as="span" size="small" source="/mechanic-matt.jpeg" />
-                          </span>
-                          <Text as="p" variant="bodyLg">
-                            Matt Sodomsky
-                            <br />
-                            VP, Product & Strategy, Mechanic
-                          </Text>
-                        </InlineStack>
-                        <Text as="p" variant="bodyLg"></Text>
-                      </BlockStack>
-                    </Card>
+                    <Rates showButtons={true} />
                   </BlockStack>
                 </Layout.Section>
               </Layout>
+              <Testimonials />
               <FooterHelp>
                 <BlockStack gap="500">
                   <BlockStack gap="400">

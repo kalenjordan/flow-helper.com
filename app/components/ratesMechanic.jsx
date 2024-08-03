@@ -29,7 +29,7 @@ export function Rates({ showButtons }) {
               </InlineStack>
             </Box>
           </Bleed>
-          <InlineGrid gap="500" columns={4}>
+          <BlockStack gap="500">
             <BlockStack gap="300">
               <Text as="h2" variant="headingMd">
                 1 Hour
@@ -84,7 +84,7 @@ export function Rates({ showButtons }) {
                 </Button>
               </span>
             </BlockStack>
-          </InlineGrid>
+          </BlockStack>
         </BlockStack>
       </Card>
     </>

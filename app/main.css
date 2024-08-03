@@ -110,24 +110,6 @@ img.logo.xero {
       grid-row: span 2;
     }
 
-    /** Magento */
-    &:nth-child(8) {
-      grid-column: span 2;
-      grid-row: span 1;
-      &:hover {
-        .Polaris-Box {
-          background-color: #fff2e3;
-        }
-      }
-    }
-
-    /*
-    &:nth-child(4) {
-      grid-column: span 2;
-      grid-row: span 1;
-    }
-    */
-
     .avatar {
       width: 20px;
       border-radius: 5px;
@@ -185,4 +167,8 @@ p a {
 .newsletter-card-title {
   padding: 12px;
   background-color: rgb(145, 208, 255);
+}
+
+.zoom-lg {
+  zoom: 1.5;
 }

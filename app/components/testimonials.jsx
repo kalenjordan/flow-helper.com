@@ -102,13 +102,12 @@ export default function Testimonials({ showButtons }) {
             <Card>
               <BlockStack gap="300">
                 <Text as="h2" variant="headingMd">
-                  Knowledgeable, easy to work with, and great communication!
+                  Easy to work with & great communication!
                 </Text>
                 <Text as="p" variant="bodyLg">
                   Kalen helped us create a flow that fit our needs perfectly. He used Mechanic to accomplish a task that
                   wasn’t available in Shopify Flow on its own. He even created a quick walk through video of what he did
-                  so we understood how it worked! He is the type of development partner we’ve been looking for. Will
-                  definitely work with him again!
+                  so we understood how it worked! He is the type of development partner we’ve been looking for.
                 </Text>
                 <Text as="p" variant="bodyLg" tone="subdued">
                   Craig Anderson, Vive Juicery

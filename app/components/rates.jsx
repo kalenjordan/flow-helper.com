@@ -54,8 +54,8 @@ export function Rates({ showButtons }) {
                 Let's get a little bit more done.
               </Text>
               <span>
-                <Button icon={CartIcon} url="https://buy.stripe.com/aEU4hK5Hh4eP6iYdRa" target="_blank">
-                  $650
+                <Button icon={CartIcon} url="https://buy.stripe.com/8wM15y0mXh1BgXC7t0" target="_blank">
+                  $700
                 </Button>
               </span>
             </BlockStack>
@@ -69,7 +69,7 @@ export function Rates({ showButtons }) {
                 Let's get off to the races with a quick win.
               </Text>
               <span>
-                <Button icon={CartIcon} url="https://buy.stripe.com/14keWo8Tt4eP9va00e" target="_blank">
+                <Button icon={CartIcon} url="https://buy.stripe.com/cN2cOgd9J5iT4aQ00p" target="_blank">
                   $1,200
                 </Button>
               </span>

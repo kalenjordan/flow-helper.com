@@ -52,7 +52,7 @@ export function Rates({ showButtons }) {
               </Text>
               <span>
                 <Button icon={CartIcon} url="https://buy.stripe.com/28o29C3z94eP5eUcNj" target="_blank">
-                  $360
+                  $435
                 </Button>
               </span>
             </BlockStack>
@@ -66,7 +66,7 @@ export function Rates({ showButtons }) {
               </Text>
               <span>
                 <Button icon={CartIcon} url="https://buy.stripe.com/8wM15y0mXh1BgXC7t0" target="_blank">
-                  $550
+                  $700
                 </Button>
               </span>
             </BlockStack>
@@ -79,8 +79,8 @@ export function Rates({ showButtons }) {
                 Complex-er Mechanic tasks
               </Text>
               <span>
-                <Button icon={CartIcon} url="https://buy.stripe.com/14k6pS7PpeTtgXC00d" target="_blank">
-                  $1,000
+                <Button icon={CartIcon} url="https://buy.stripe.com/cN2cOgd9J5iT4aQ00p" target="_blank">
+                  $1,200
                 </Button>
               </span>
             </BlockStack>

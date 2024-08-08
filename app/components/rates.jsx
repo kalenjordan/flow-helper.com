@@ -36,11 +36,11 @@ export function Rates({ showButtons }) {
                 1 hour
               </Text>
               <Text as="p" variant="bodyLg">
-                This will cover most basic flows
+                Off to the races with a quick win.
               </Text>
               <span>
-                <Button icon={CartIcon} url="https://buy.stripe.com/bIYdSk3z9h1B0YE5kD" target="_blank">
-                  $140
+                <Button icon={CartIcon} url="https://buy.stripe.com/cN25lOedN4eP4aQ7sK" target="_blank">
+                  $150
                 </Button>
               </span>
             </BlockStack>

@@ -38,8 +38,8 @@ export function Rates({ showButtons }) {
                 Simple Mechanic tasks
               </Text>
               <span>
-                <Button icon={CartIcon} url="https://buy.stripe.com/14kg0s1r1dPp9vabJe" target="_blank">
-                  $130
+                <Button icon={CartIcon} url="https://buy.stripe.com/cN25lOedN4eP4aQ7sK" target="_blank">
+                  $150
                 </Button>
               </span>
             </BlockStack>

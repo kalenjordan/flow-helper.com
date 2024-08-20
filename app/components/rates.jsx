@@ -70,7 +70,7 @@ export function Rates({ showButtons }) {
               </Text>
               <span>
                 <Button icon={CartIcon} url="https://buy.stripe.com/cN2cOgd9J5iT4aQ00p" target="_blank">
-                  $1,200
+                  $1,300
                 </Button>
               </span>
             </BlockStack>
@@ -85,7 +85,7 @@ export function Rates({ showButtons }) {
               </Text>
               <span>
                 <Button url="https://buy.stripe.com/4gwbKc9Xx4eP36M3co" target="_blank" icon={CartIcon}>
-                  $2,200
+                  $2,400
                 </Button>
               </span>
             </BlockStack>
@@ -94,7 +94,7 @@ export function Rates({ showButtons }) {
             <BlockStack gap="300">
               <InlineStack gap="200">
                 <Text as="h2" variant="headingMd">
-                  30+ Hours
+                  30 Hours
                 </Text>
                 <Badge gap="500" tone="success">
                   Best Value
@@ -105,7 +105,7 @@ export function Rates({ showButtons }) {
               </Text>
               <span>
                 <Button url="https://buy.stripe.com/28oaG85Hh3aL6iY3ch" target="_blank" icon={CartIcon}>
-                  $3,000
+                  $3,300
                 </Button>
               </span>
             </BlockStack>

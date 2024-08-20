@@ -80,7 +80,7 @@ export function Rates({ showButtons }) {
               </Text>
               <span>
                 <Button icon={CartIcon} url="https://buy.stripe.com/cN2cOgd9J5iT4aQ00p" target="_blank">
-                  $1,200
+                  $1,300
                 </Button>
               </span>
             </BlockStack>

@@ -45,6 +45,19 @@ export function Rates({ showButtons }) {
             </BlockStack>
             <BlockStack gap="300">
               <Text as="h2" variant="headingMd">
+                2 Hours
+              </Text>
+              <Text as="p" variant="bodyLg">
+                Medium-complexity tasks
+              </Text>
+              <span>
+                <Button icon={CartIcon} url="https://buy.stripe.com/cN23dG7Pp4eP8r6cNl" target="_blank">
+                  $300
+                </Button>
+              </span>
+            </BlockStack>
+            <BlockStack gap="300">
+              <Text as="h2" variant="headingMd">
                 3 Hours
               </Text>
               <Text as="p" variant="bodyLg">

@@ -110,6 +110,11 @@ img.logo.xero {
       grid-row: span 2;
     }
 
+    &:nth-child(7) {
+      grid-column: span 2;
+      zoom: 1.2;
+    }
+
     .avatar {
       width: 20px;
       border-radius: 5px;

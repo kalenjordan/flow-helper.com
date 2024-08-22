@@ -1,6 +1,7 @@
 import { Box, Card, Icon, Thumbnail, Text, InlineStack, BlockStack } from "@shopify/polaris";
 import React from "react";
 import { CartIcon, StarFilledIcon, PaymentIcon } from "@shopify/polaris-icons";
+import FiveStars from "./fiveStars";
 
 export default function Testimonials({ showButtons }) {
   return (
@@ -48,23 +49,7 @@ export default function Testimonials({ showButtons }) {
                   <Text as="p" variant="bodyLg" tone="subdued">
                     John C, johnjulia com
                   </Text>
-                  <InlineStack as="span" align="start" gap="0">
-                    <span>
-                      <Icon source={StarFilledIcon} as="span" />
-                    </span>
-                    <span>
-                      <Icon source={StarFilledIcon} as="span" />
-                    </span>
-                    <span>
-                      <Icon source={StarFilledIcon} as="span" />
-                    </span>
-                    <span>
-                      <Icon source={StarFilledIcon} as="span" />
-                    </span>
-                    <span>
-                      <Icon source={StarFilledIcon} as="span" />
-                    </span>
-                  </InlineStack>
+                  <FiveStars />
                 </BlockStack>
               </div>
             </Card>
@@ -80,23 +65,7 @@ export default function Testimonials({ showButtons }) {
                 <Text as="p" variant="bodyLg" tone="subdued">
                   Mouhamadou Thioune
                 </Text>
-                <InlineStack as="span" align="start" gap="0">
-                  <span>
-                    <Icon source={StarFilledIcon} as="span" />
-                  </span>
-                  <span>
-                    <Icon source={StarFilledIcon} as="span" />
-                  </span>
-                  <span>
-                    <Icon source={StarFilledIcon} as="span" />
-                  </span>
-                  <span>
-                    <Icon source={StarFilledIcon} as="span" />
-                  </span>
-                  <span>
-                    <Icon source={StarFilledIcon} as="span" />
-                  </span>
-                </InlineStack>
+                <FiveStars />
               </BlockStack>
             </Card>
             <Card>
@@ -112,23 +81,7 @@ export default function Testimonials({ showButtons }) {
                 <Text as="p" variant="bodyLg" tone="subdued">
                   Craig Anderson, Vive Juicery
                 </Text>
-                <InlineStack as="span" align="start" gap="0">
-                  <span>
-                    <Icon source={StarFilledIcon} as="span" />
-                  </span>
-                  <span>
-                    <Icon source={StarFilledIcon} as="span" />
-                  </span>
-                  <span>
-                    <Icon source={StarFilledIcon} as="span" />
-                  </span>
-                  <span>
-                    <Icon source={StarFilledIcon} as="span" />
-                  </span>
-                  <span>
-                    <Icon source={StarFilledIcon} as="span" />
-                  </span>
-                </InlineStack>
+                <FiveStars />
               </BlockStack>
             </Card>
 
@@ -145,23 +98,7 @@ export default function Testimonials({ showButtons }) {
                 <Text as="p" variant="bodyLg" tone="subdued">
                   Curtis Ulrich, Aviator Nation
                 </Text>
-                <InlineStack as="span" align="start" gap="0">
-                  <span>
-                    <Icon source={StarFilledIcon} as="span" />
-                  </span>
-                  <span>
-                    <Icon source={StarFilledIcon} as="span" />
-                  </span>
-                  <span>
-                    <Icon source={StarFilledIcon} as="span" />
-                  </span>
-                  <span>
-                    <Icon source={StarFilledIcon} as="span" />
-                  </span>
-                  <span>
-                    <Icon source={StarFilledIcon} as="span" />
-                  </span>
-                </InlineStack>
+                <FiveStars />
               </BlockStack>
             </Card>
             <Card>
@@ -177,23 +114,40 @@ export default function Testimonials({ showButtons }) {
                 <Text as="p" variant="bodyLg" tone="subdued">
                   Natalie Roger, Tack Trunks{" "}
                 </Text>
-                <InlineStack as="span" align="start" gap="0">
-                  <span>
-                    <Icon source={StarFilledIcon} as="span" />
-                  </span>
-                  <span>
-                    <Icon source={StarFilledIcon} as="span" />
-                  </span>
-                  <span>
-                    <Icon source={StarFilledIcon} as="span" />
-                  </span>
-                  <span>
-                    <Icon source={StarFilledIcon} as="span" />
-                  </span>
-                  <span>
-                    <Icon source={StarFilledIcon} as="span" />
-                  </span>
-                </InlineStack>
+                <FiveStars />
+              </BlockStack>
+            </Card>
+            <Card>
+              <BlockStack gap="300">
+                <Text as="h2" variant="headingMd">
+                  Soooooo helpful!
+                </Text>
+                <Text as="p" variant="bodyLg">
+                  Kalen has been fantastic to work with. We have a big pile of urgent modifications and he has been
+                  swiftly moving through them. <strong>He's very responsive and clear</strong> about what works and what
+                  doesn't. And great at finding and implementing solutions. Transferring to Shopify has been a nightmare
+                  but having Kalen in our corner is making it so much better! Can't recommend highly enough!{" "}
+                </Text>
+                <Text as="p" variant="bodyLg" tone="subdued">
+                  Gabriel Boyers
+                </Text>
+                <FiveStars />
+              </BlockStack>
+            </Card>
+            <Card>
+              <BlockStack gap="300">
+                <Text as="h2" variant="headingMd">
+                  Exceptional integrity and professionalsim
+                </Text>
+                <Text as="p" variant="bodyLg">
+                  I'm a developer and I know Shopify pretty well after having built our shop and some integrations
+                  myself. However, when I discovered Mechanic, I was stumped by the intricacies of it...Kalen was
+                  extremely helpful, delivered the task really quickly and saved me from a lot of frustration.
+                </Text>
+                <Text as="p" variant="bodyLg" tone="subdued">
+                  Juha Kaunisto
+                </Text>
+                <FiveStars />
               </BlockStack>
             </Card>
           </div>

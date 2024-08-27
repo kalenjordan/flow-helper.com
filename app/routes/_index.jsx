@@ -291,7 +291,7 @@ export default function Index() {
                       </BlockStack>
                     </Card>
                     <Availability showBookCall={true} />
-                    <Rates showButtons={false} />
+                    <Rates showButtons={false} allRates={true} />
                   </BlockStack>
                 </Layout.Section>
               </Layout>

@@ -29,12 +29,12 @@ import Testimonials from "../components/testimonials";
 
 export const meta = () => {
   return [
-    { title: "Hire A Shopify Mechanic | Kalen Jordan" },
+    { title: "Getting Started | Flow Helper" },
     {
       name: "viewport",
       content: "width=device-width, initial-scale=1.0",
     },
-    { name: "description", content: "I specialize in automations for Shopify and love Mechanic!" },
+    { name: "description", content: "Ready to hire me? Here's how to kick things off." },
   ];
 };
 
@@ -44,47 +44,44 @@ export default function Index() {
 
   return (
     <AppProvider i18n={enTranslations}>
+      <div class="breadcrumb subdued">
+        <a href="/">&lt; Home</a>
+      </div>
       <Frame>
         <Page>
           <Box paddingBlockStart={{ xs: 400, lg: 400 }}>
-            <BlockStack gap="500">
-              <Box paddingInline={{ xs: "400", sm: "0" }}>
-                <Card>
-                  <Bleed marginInline="400" marginBlock="400">
-                    <img style={{ width: "100%", marginBottom: "-7px" }} src="/mechanic-header.png"></img>
-                  </Bleed>
-                </Card>
-              </Box>
-              <BlockStack gap="100">
-                <Box paddingBlockStart={{ xs: 200, sm: 400, md: 800 }} paddingBlockEnd={{ xs: 200, sm: 400, md: 800 }}>
-                  <Text alignment="center" tone="subdued">
-                    Brands I've worked with
-                  </Text>
-                  <InlineStack gap={{ xs: 0, sm: 100, lg: 800 }} align="center">
-                    <img className="logo chubbies" src="/logo-chubbies.png" style={{ height: "30px" }} />
-                    <img className="logo rothys" src="/logo-rothys.png" style={{ height: "25px", marginTop: "3px" }} />
-                    <img className="logo rothys" src="/logo-rainbow.png" style={{ height: "25px" }} />
-                  </InlineStack>
-                </Box>
-              </BlockStack>
+            <BlockStack gap="1000">
+              <Text as="h1" variant="headingXl" alignment="center" fontWeight="regular">
+                Ready to hire me? Here's how to kick things off
+              </Text>
               <Layout>
                 <Layout.Section>
                   <BlockStack gap="500">
                     <Card title="Order details" sectioned>
                       <BlockStack gap="300">
-                        <Text as="h2">Hey there!</Text>
+                        <Text as="p" variant="bodyLg">
+                          Here's what the process looks like for getting started.
+                        </Text>
+                        <Text as="p" variant="bodyLg">
+                          By now you should have received an estimate. If the estimate is within a range, you can pay
+                          for the low end of the range or the high end.
+                        </Text>
+                        <Text as="p" variant="bodyLg">
+                          The benefit to the high end is that there's a price break for larger chunks of hours. Any
+                          unused hours can be used towards other things that you may need help with.
+                        </Text>
 
                         <Text as="p" variant="bodyLg">
-                          Having built hundreds of workflow automations for Shopify using Mechanic, custom code, and
-                          other tools, if there's something that's possible to do in Shopify, I can do it for you. And
-                          usually prettttty quick.
+                          Once you've decided on a number of hours to prepay, go ahead and click the link in the rates
+                          section here to make the payment.
                         </Text>
                         <Text as="p" variant="bodyLg">
-                          Don't bang your head against the wall trying to articulate exactly what needs to happen. Just
-                          explain it to me in plain English and I'll figure it out.
+                          And then you can go ahead and send me your collaborator code so that I can request access to
+                          your Shopify store.
                         </Text>
                         <Text as="p" variant="bodyLg">
-                          Can't wait to hear from you!
+                          Once I send the collaboration request, you'll have to approve it, and then I'll be able to get
+                          into your Shopify store and get to work.
                         </Text>
                         <Box padding="200">
                           <Divider borderColor="border" />
@@ -156,13 +153,33 @@ export default function Index() {
                         />
                       </BlockStack>
                     </Card>
-                    {Table()}
+                    <Card title="Order details" sectioned>
+                      <BlockStack gap="500">
+                        <BlockStack gap="300">
+                          <Text as="p" variant="bodyLg" fontWeight="bold">
+                            Can you send me an invoice?
+                          </Text>
+                          <Text as="p" variant="bodyLg">
+                            When your card is charged, you'll receive a receipt from Stripe. This should be all that you
+                            need from an accountimg perspective, but just let me know if that's not the case.
+                          </Text>
+                        </BlockStack>
+                        <BlockStack gap="300">
+                          <Text as="p" variant="bodyLg" fontWeight="bold">
+                            What is the refund policy?
+                          </Text>
+                          <Text as="p" variant="bodyLg">
+                            You can request a refund for any unused hours at any time. Just let me know and I'll process
+                            it.
+                          </Text>
+                        </BlockStack>
+                      </BlockStack>
+                    </Card>
                   </BlockStack>
                 </Layout.Section>
                 <Layout.Section variant="oneThird">
                   <BlockStack gap="500">
-                    <Availability showBookCall={true} />
-                    <Rates showButtons={true} mechanicRates={true} />
+                    <Rates showButtons={true} allRates={true} />
                   </BlockStack>
                 </Layout.Section>
               </Layout>

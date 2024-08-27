@@ -15,7 +15,7 @@ import {
 import React from "react";
 import { CartIcon, CalendarIcon, PaymentIcon } from "@shopify/polaris-icons";
 
-export function Rates({ showButtons }) {
+export function Rates({ showButtons, mechanicRates = false, allRates = false }) {
   return (
     <>
       <Card>
@@ -44,7 +44,38 @@ export function Rates({ showButtons }) {
                 </Button>
               </span>
             </BlockStack>
-            <Divider />
+
+            {(mechanicRates || allRates) && (
+              <BlockStack gap="300">
+                <Text as="h2" variant="headingMd">
+                  2 Hours
+                </Text>
+                <Text as="p" variant="bodyLg">
+                  Medium-complexity tasks
+                </Text>
+                <span>
+                  <Button icon={CartIcon} url="https://buy.stripe.com/cN23dG7Pp4eP8r6cNl" target="_blank">
+                    $300
+                  </Button>
+                </span>
+              </BlockStack>
+            )}
+
+            {(mechanicRates || allRates) && (
+              <BlockStack gap="300">
+                <Text as="h2" variant="headingMd">
+                  3 Hours
+                </Text>
+                <Text as="p" variant="bodyLg">
+                  Medium-complexity tasks
+                </Text>
+                <span>
+                  <Button icon={CartIcon} url="https://buy.stripe.com/28o29C3z94eP5eUcNj" target="_blank">
+                    $435
+                  </Button>
+                </span>
+              </BlockStack>
+            )}
 
             <BlockStack gap="300">
               <Text as="h2" variant="headingMd">
@@ -59,7 +90,6 @@ export function Rates({ showButtons }) {
                 </Button>
               </span>
             </BlockStack>
-            <Divider />
 
             <BlockStack gap="300">
               <Text as="h2" variant="headingMd">
@@ -74,41 +104,43 @@ export function Rates({ showButtons }) {
                 </Button>
               </span>
             </BlockStack>
-            <Divider />
 
-            <BlockStack gap="300">
-              <Text as="h2" variant="headingMd">
-                20 Hours
-              </Text>
-              <Text as="p" variant="bodyLg">
-                We'll have a little more time to fine tune.
-              </Text>
-              <span>
-                <Button url="https://buy.stripe.com/4gwbKc9Xx4eP36M3co" target="_blank" icon={CartIcon}>
-                  $2,400
-                </Button>
-              </span>
-            </BlockStack>
-            <Divider />
-
-            <BlockStack gap="300">
-              <InlineStack gap="200">
+            {!mechanicRates && (
+              <BlockStack gap="300">
                 <Text as="h2" variant="headingMd">
-                  30 Hours
+                  20 Hours
                 </Text>
-                <Badge gap="500" tone="success">
-                  Best Value
-                </Badge>
-              </InlineStack>
-              <Text as="p" variant="bodyLg">
-                Now we're cooking with fire.
-              </Text>
-              <span>
-                <Button url="https://buy.stripe.com/28oaG85Hh3aL6iY3ch" target="_blank" icon={CartIcon}>
-                  $3,300
-                </Button>
-              </span>
-            </BlockStack>
+                <Text as="p" variant="bodyLg">
+                  We'll have a little more time to fine tune.
+                </Text>
+                <span>
+                  <Button url="https://buy.stripe.com/4gwbKc9Xx4eP36M3co" target="_blank" icon={CartIcon}>
+                    $2,400
+                  </Button>
+                </span>
+              </BlockStack>
+            )}
+
+            {!mechanicRates && (
+              <BlockStack gap="300">
+                <InlineStack gap="200">
+                  <Text as="h2" variant="headingMd">
+                    30 Hours
+                  </Text>
+                  <Badge gap="500" tone="success">
+                    Best Value
+                  </Badge>
+                </InlineStack>
+                <Text as="p" variant="bodyLg">
+                  Now we're cooking with fire.
+                </Text>
+                <span>
+                  <Button url="https://buy.stripe.com/28oaG85Hh3aL6iY3ch" target="_blank" icon={CartIcon}>
+                    $3,300
+                  </Button>
+                </span>
+              </BlockStack>
+            )}
           </BlockStack>
         </BlockStack>
       </Card>

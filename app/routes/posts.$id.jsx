@@ -42,6 +42,21 @@ export async function loader({ params }) {
 }
 */
 
+export const meta = () => {
+  return [
+    { title: "Using Send HTTP Request In Shopify Flow To Do A GraphQL API Call | Flow Helper" },
+    {
+      name: "viewport",
+      content: "width=device-width, initial-scale=1.0",
+    },
+    {
+      name: "description",
+      content:
+        "In this video we'll walk through the process of setting up a Send HTTP Request action in Shopify Flow step by step.",
+    },
+  ];
+};
+
 export default function Index() {
   return (
     <AppProvider i18n={enTranslations}>

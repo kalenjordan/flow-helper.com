@@ -183,15 +183,15 @@ export default function Index() {
                             <Link url="https://www.flow-helper.com/calendar">schedule that here</Link>.
                           </Text>
                         </BlockStack>
-                      </BlockStack>
-                      <BlockStack gap="300">
-                        <Text as="p" variant="bodyLg" fontWeight="bold">
-                          Can you send me an invoice?
-                        </Text>
-                        <Text as="p" variant="bodyLg">
-                          When your card is charged, you'll receive a receipt from Stripe. This should be all that you
-                          need from an accountimg perspective, but just let me know if that's not the case.
-                        </Text>
+                        <BlockStack gap="300">
+                          <Text as="p" variant="bodyLg" fontWeight="bold">
+                            Can you send me an invoice?
+                          </Text>
+                          <Text as="p" variant="bodyLg">
+                            When your card is charged, you'll receive a receipt from Stripe. This should be all that you
+                            need from an accountimg perspective, but just let me know if that's not the case.
+                          </Text>
+                        </BlockStack>
                       </BlockStack>
                     </Card>
                     <Card>

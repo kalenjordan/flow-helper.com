@@ -3,12 +3,15 @@ import "../main.css";
 import enTranslations from "@shopify/polaris/locales/en.json";
 import {
   AppProvider,
+  Badge,
   Bleed,
+  Button,
   Box,
   Card,
   DescriptionList,
   Divider,
   Icon,
+  Link,
   Page,
   Text,
   Thumbnail,
@@ -20,10 +23,16 @@ import {
   Avatar,
 } from "@shopify/polaris";
 import "@shopify/polaris/build/esm/styles.css";
-import { ChatIcon, ReceiptRefundIcon, ReplayIcon, StarFilledIcon, PaymentIcon, WorkIcon } from "@shopify/polaris-icons";
+import {
+  CalendarIcon,
+  ChatIcon,
+  ReceiptRefundIcon,
+  ReplayIcon,
+  StarFilledIcon,
+  PaymentIcon,
+  WorkIcon,
+} from "@shopify/polaris-icons";
 import { useState } from "react";
-import { Table } from "../components/mechanicTemplates";
-import { Availability } from "../components/availability";
 import Rates from "../components/rates";
 import Testimonials from "../components/testimonials";
 
@@ -157,22 +166,54 @@ export default function Index() {
                       <BlockStack gap="500">
                         <BlockStack gap="300">
                           <Text as="p" variant="bodyLg" fontWeight="bold">
-                            Can you send me an invoice?
+                            Should I pay for the high end or the low end of the estimate range?
                           </Text>
                           <Text as="p" variant="bodyLg">
-                            When your card is charged, you'll receive a receipt from Stripe. This should be all that you
-                            need from an accountimg perspective, but just let me know if that's not the case.
+                            If the estimate you've received is a range of hours, you can pay either the high end or the
+                            low end. The benefit to the high end is that there's a price break for larger blocks of
+                            hours. Any unused hours can be used towards other things that you may need help with.
                           </Text>
                         </BlockStack>
                         <BlockStack gap="300">
                           <Text as="p" variant="bodyLg" fontWeight="bold">
-                            What is the refund policy?
+                            Can we jump on a call first to discuss?
                           </Text>
                           <Text as="p" variant="bodyLg">
-                            You can request a refund for any unused hours at any time. Just let me know and I'll process
-                            it.
+                            Yes - feel free to{" "}
+                            <Link url="https://www.flow-helper.com/calendar">schedule that here</Link>.
                           </Text>
                         </BlockStack>
+                      </BlockStack>
+                      <BlockStack gap="300">
+                        <Text as="p" variant="bodyLg" fontWeight="bold">
+                          Can you send me an invoice?
+                        </Text>
+                        <Text as="p" variant="bodyLg">
+                          When your card is charged, you'll receive a receipt from Stripe. This should be all that you
+                          need from an accountimg perspective, but just let me know if that's not the case.
+                        </Text>
+                      </BlockStack>
+                    </Card>
+                    <Card>
+                      <BlockStack gap="300">
+                        <Bleed marginBlockStart="400" marginInline="400">
+                          <Box background="bg-surface-secondary" padding="400">
+                            <InlineStack as="span" align="start" gap="200">
+                              <Icon source={CalendarIcon} as="span" />
+                              <Text as="h2" variant="headingMd">
+                                Want to schedule a call first?
+                              </Text>
+                            </InlineStack>
+                          </Box>
+                        </Bleed>
+                        <Text as="p" variant="bodyLg">
+                          If you'd prefer to discuss this on a call first, you can feel free to schedule that here.
+                        </Text>
+                        <InlineStack as="span" align="start" gap="200">
+                          <Button as="span" url="/calendar">
+                            Book a call
+                          </Button>
+                        </InlineStack>
                       </BlockStack>
                     </Card>
                   </BlockStack>

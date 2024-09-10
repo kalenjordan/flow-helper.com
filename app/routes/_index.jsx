@@ -263,33 +263,6 @@ export default function Index() {
                         )}
                       </BlockStack>
                     </Card>
-                    <Card>
-                      <BlockStack gap="300">
-                        <Bleed marginBlockStart="400" marginInline="400">
-                          <Box background="bg-surface-secondary" padding="400">
-                            <InlineStack gap="200">
-                              <Avatar size="xs" source="flow-helper-icon.png" />
-                              <Text as="h2" variant="headingMd">
-                                Flow Helper Shopify App
-                              </Text>
-                            </InlineStack>
-                          </Box>
-                        </Bleed>
-                        <Text as="p" variant="bodyLg">
-                          Flow Helper is a Shopify app that adds missing triggers and actions to use natively within
-                          Flow, including bulk flow runs.
-                        </Text>
-                        <InlineStack as="span" align="start" gap="200">
-                          <Button
-                            as="span"
-                            url="https://apps.shopify.com/flow-helper?show_store_picker=1"
-                            target="_blank"
-                          >
-                            Check it out
-                          </Button>
-                        </InlineStack>
-                      </BlockStack>
-                    </Card>
                     <Availability showBookCall={true} />
                     <Rates showButtons={false} />
                   </BlockStack>

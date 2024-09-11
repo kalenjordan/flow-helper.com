@@ -229,40 +229,6 @@ export default function Index() {
                 </Layout.Section>
                 <Layout.Section variant="oneThird">
                   <BlockStack gap="500">
-                    <Card>
-                      <BlockStack gap="300">
-                        <Bleed marginBlockStart={400} marginInline={400}>
-                          <div className="newsletter-card-title">
-                            <InlineStack gap="200">
-                              <Icon source={AutomationIcon} as="span" />
-                              <Text as="h2" variant="headingMd">
-                                The Shopify Automation Newsletter
-                              </Text>
-                            </InlineStack>
-                          </div>
-                        </Bleed>
-                        <Text as="p" variant="bodyLg">
-                          Find out interesting ways to automate Shopify using Flow, Mechanic, and other tools.
-                        </Text>
-                        {!showNewsletter && (
-                          <InlineStack as="span" align="start" gap="200">
-                            <Button as="span" variant="primary" target="_blank" onClick={() => setShowNewsletter(true)}>
-                              Subscribe For Free
-                            </Button>
-                          </InlineStack>
-                        )}
-                        {showNewsletter && (
-                          <iframe
-                            src="https://embeds.beehiiv.com/28464cbf-e8c2-4cac-ad4a-7353b446aab9?slim=true"
-                            data-test-id="beehiiv-embed"
-                            height="52"
-                            frameborder="0"
-                            scrolling="no"
-                            style={{ width: "100%" }}
-                          ></iframe>
-                        )}
-                      </BlockStack>
-                    </Card>
                     <Availability showBookCall={true} />
                     <Rates showButtons={false} />
                   </BlockStack>

@@ -27,7 +27,7 @@ export function Availability({ showBookCall }) {
               chatting!
             </Text>
             <span>
-              <Badge tone="info">Available Now!</Badge>
+              <Badge tone="info">October</Badge>
             </span>
             <InlineStack as="span" align="start" gap="200">
               <Button as="span" url="/call">

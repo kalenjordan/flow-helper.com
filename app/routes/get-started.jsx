@@ -179,8 +179,7 @@ export default function Index() {
                             Can we jump on a call first to discuss?
                           </Text>
                           <Text as="p" variant="bodyLg">
-                            Yes - feel free to{" "}
-                            <Link url="https://www.flow-helper.com/calendar">schedule that here</Link>.
+                            Yes - feel free to <Link url="https://www.flow-helper.com/call">schedule that here</Link>.
                           </Text>
                         </BlockStack>
                         <BlockStack gap="300">
@@ -210,7 +209,7 @@ export default function Index() {
                           If you'd prefer to discuss this on a call first, you can feel free to schedule that here.
                         </Text>
                         <InlineStack as="span" align="start" gap="200">
-                          <Button as="span" url="/calendar">
+                          <Button as="span" url="/call">
                             Book a call
                           </Button>
                         </InlineStack>

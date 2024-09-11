@@ -30,7 +30,7 @@ export function Availability({ showBookCall }) {
               <Badge tone="info">Available Now!</Badge>
             </span>
             <InlineStack as="span" align="start" gap="200">
-              <Button as="span" url="/calendar">
+              <Button as="span" url="/call">
                 Book a call
               </Button>
               <Button as="span" url="mailto:hey@flow-helper.com" target="_blank">

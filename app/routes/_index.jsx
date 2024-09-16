@@ -214,11 +214,11 @@ export default function Index() {
                                   <span>
                                     <Icon source={ReceiptRefundIcon} as="span" />
                                   </span>
-                                  Refund?
+                                  Ongoing followup
                                 </InlineStack>
                               ),
                               description:
-                                "At any time, you can request a refund for any of the unused hours that were prepaid.",
+                                "You can use prepard hours at any time in the future. I do bill a minimum of 1 hour per month for each month for preparid hours.",
                             },
                           ]}
                         />

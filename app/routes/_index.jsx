@@ -231,6 +231,13 @@ export default function Index() {
                   <BlockStack gap="500">
                     <Availability showBookCall={true} />
                     <Rates showButtons={false} />
+                    <Card>
+                      <Bleed marginInline="400" marginBlock="400">
+                        <video width="100%" controls="controls" poster="/welcome.jpg">
+                          <source src="/welcome.mp4" />
+                        </video>
+                      </Bleed>
+                    </Card>
                   </BlockStack>
                 </Layout.Section>
               </Layout>

@@ -75,40 +75,25 @@ export default function Index() {
                   </Text>
                 </Box>
               </BlockStack>
-              <Layout>
-                <Layout.Section>
-                  <Card>
-                    <BlockStack gap="300">
-                      <Text as="p" variant="bodyLg">
-                        I generally prefer to discuss projects by email, as it tends to be more efficient. But if you'd
-                        like to book a call, you can do so below.
-                      </Text>
-                      <Text as="p" variant="bodyLg">
-                        Once you make the payment, on the confirmation page you'll see a link to schedule the call.
-                      </Text>
-                      <InlineStack as="span" align="start" gap="200">
-                        <Button variant="primary" as="span" url="https://buy.stripe.com/28ocOgglVh1B36McNn">
-                          $50 - Book a call
-                        </Button>
-                        <Button as="span" url="mailto:hey@flow-helper.com" target="_blank">
-                          Email me
-                        </Button>
-                      </InlineStack>
-                    </BlockStack>
-                  </Card>
-                </Layout.Section>
-                <Layout.Section variant="oneThird">
-                  <BlockStack gap="500">
-                    <Card>
-                      <Bleed marginInline="400" marginBlock="400">
-                        <video width="100%" controls="controls" poster="/welcome.jpg">
-                          <source src="/welcome.mp4" />
-                        </video>
-                      </Bleed>
-                    </Card>
-                  </BlockStack>
-                </Layout.Section>
-              </Layout>
+              <Card>
+                <BlockStack gap="300">
+                  <Text as="p" variant="bodyLg">
+                    I generally prefer to discuss projects by email, as it tends to be more efficient. But if you'd like
+                    to book a call, you can do so below.
+                  </Text>
+                  <Text as="p" variant="bodyLg">
+                    Once you make the payment, on the confirmation page you'll see a link to schedule the call.
+                  </Text>
+                  <InlineStack as="span" align="start" gap="200">
+                    <Button variant="primary" as="span" url="https://buy.stripe.com/28ocOgglVh1B36McNn">
+                      $50 - Book a call
+                    </Button>
+                    <Button as="span" url="mailto:hey@flow-helper.com" target="_blank">
+                      Email me
+                    </Button>
+                  </InlineStack>
+                </BlockStack>
+              </Card>
               <Testimonials />
               <FooterHelp>
                 <BlockStack gap="500">

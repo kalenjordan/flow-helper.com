@@ -167,10 +167,11 @@ export default function Index() {
                                   <span>
                                     <Icon source={CalendarIcon} as="span" />
                                   </span>
-                                  Schedule a call
+                                  Estimate
                                 </InlineStack>
                               ),
-                              description: "We'll jump on a call to talk through your needs.",
+                              description:
+                                "Let me know what you're looking to get done and I'll give you a rough estimate for the work.",
                             },
                             {
                               term: (
@@ -214,7 +215,7 @@ export default function Index() {
                                   <span>
                                     <Icon source={ReceiptRefundIcon} as="span" />
                                   </span>
-                                  Ongoing followup
+                                  Ongoing
                                 </InlineStack>
                               ),
                               description:

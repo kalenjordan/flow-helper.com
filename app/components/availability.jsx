@@ -30,11 +30,11 @@ export function Availability({ showBookCall }) {
               <Badge tone="info">October</Badge>
             </span>
             <InlineStack as="span" align="start" gap="200">
+              <Button as="span" url="mailto:hey@flow-helper.com" target="_blank" variant="primary">
+                Email me
+              </Button>
               <Button as="span" url="/call">
                 Book a call
-              </Button>
-              <Button as="span" url="mailto:hey@flow-helper.com" target="_blank">
-                Email me
               </Button>
             </InlineStack>
           </BlockStack>

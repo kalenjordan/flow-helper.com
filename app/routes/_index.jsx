@@ -39,7 +39,6 @@ import { Availability } from "../components/availability";
 import Rates from "../components/rates";
 import Testimonials from "../components/testimonials";
 import styles from "../main.css?url";
-import { PrismaClient } from "@prisma/client";
 import { useLoaderData } from "@remix-run/react";
 
 export const meta = () => {
@@ -51,8 +50,7 @@ export const meta = () => {
     },
     {
       name: "description",
-      content:
-        "Whether you're looking for help with Shopify Flow, other automation apps, or custom integration, I'm your guy!",
+      content: "Whether you're looking for help with Shopify Flow, other automation apps, or custom integration, I'm your guy!",
     },
   ];
 };
@@ -60,8 +58,8 @@ export const meta = () => {
 export const links = () => [{ rel: "stylesheet", href: styles }];
 
 export async function loader({ params }) {
-  const prisma = new PrismaClient();
-  const templates = await prisma.template.findMany();
+  const templatesWrapper = await import("../../data/templates.json");
+  let templates = templatesWrapper.default;
 
   return templates;
 }
@@ -84,8 +82,8 @@ export default function Index() {
                 </Text>
                 <Box paddingInline={{ xs: 600, lg: 3200 }}>
                   <Text alignment="center" variant="bodyLg" fontWeight="400" className="subtitle">
-                    Whether using Shopify Flow, IPaaS systems, or writing custom - if you need any automation done in
-                    Shopify or integrations with systems, I'm your guy.
+                    Whether using Shopify Flow, IPaaS systems, or writing custom - if you need any automation done in Shopify or integrations with
+                    systems, I'm your guy.
                   </Text>
                 </Box>
               </BlockStack>
@@ -116,13 +114,11 @@ export default function Index() {
                         <Text as="h2">Hey there!</Text>
 
                         <Text as="p" variant="bodyLg">
-                          Having built hundreds of workflow automations for Shopify using Flow, Mechanic , MESA, custom
-                          code, and other automation apps...if there's something that's possible to do in Shopify, I
-                          should be able to do it for you. And usually pretty quickly.
+                          Having built hundreds of workflow automations for Shopify using Flow, Mechanic , MESA, custom code, and other automation
+                          apps...if there's something that's possible to do in Shopify, I should be able to do it for you. And usually pretty quickly.
                         </Text>
                         <Text as="p" variant="bodyLg">
-                          Don't bang your head against the wall trying to articulate exactly what needs to happen.
-                          Figuring it out is my specialty.
+                          Don't bang your head against the wall trying to articulate exactly what needs to happen. Figuring it out is my specialty.
                         </Text>
                         <Text as="p" variant="bodyLg">
                           So, if you're looking for help with anything along these lines, I can't wait to get started!
@@ -170,8 +166,7 @@ export default function Index() {
                                   Estimate
                                 </InlineStack>
                               ),
-                              description:
-                                "Let me know what you're looking to get done and I'll give you a rough estimate for the work.",
+                              description: "Let me know what you're looking to get done and I'll give you a rough estimate for the work.",
                             },
                             {
                               term: (
@@ -194,8 +189,7 @@ export default function Index() {
                                   Begin work
                                 </InlineStack>
                               ),
-                              description:
-                                "I'll begin work and track hours on a daily basis so you have visibility into what's happening.",
+                              description: "I'll begin work and track hours on a daily basis so you have visibility into what's happening.",
                             },
                             {
                               term: (

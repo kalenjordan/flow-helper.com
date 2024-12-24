@@ -23,8 +23,6 @@ import {
   Avatar,
 } from "@shopify/polaris";
 import "@shopify/polaris/build/esm/styles.css";
-import { PrismaClient } from "@prisma/client";
-const prisma = new PrismaClient();
 
 import { api } from "../api";
 import { useFindMany, useMaybeFindOne } from "@gadgetinc/react";
@@ -32,11 +30,9 @@ import { useLoaderData } from "@remix-run/react";
 
 /*
 export async function loader({ params }) {
-  const template = prisma.template.findUnique({
-    where: {
-      id: parseInt(params.id),
-    },
-  });
+  const templatesWrapper = await import("../../data/templates.json");
+  let templates = templatesWrapper.default;
+  let template = templates.find((t) => t.id === parseInt(params.id));
 
   return template;
 }

@@ -1,0 +1,80 @@
+[
+  {
+    "id": 1,
+    "name": "AI image tagging",
+    "description": "Generate tags for images using ChatGPT Vision API",
+    "tags": "Shopify, ChatGPT, MESA"
+  },
+  {
+    "id": 2,
+    "name": "AI image alt text generation",
+    "description": "Generate alt text for images using ChatGPT Vision API",
+    "tags": "Shopify, ChatGPT, MESA"
+  },
+  {
+    "id": 3,
+    "name": "Adapt international shoe sizes",
+    "description": "Populate translations for markets using a mapping table",
+    "tags": "Shopify Plus, MESA"
+  },
+  {
+    "id": 4,
+    "name": "Declutter ShipStation line items",
+    "description": "Remove underscored line item properties",
+    "tags": "Shopify, ShipStation, MESA"
+  },
+  {
+    "id": 5,
+    "name": "Inventory levels by location on product page",
+    "description": "Pull inventory levels dynamically and render on product page",
+    "tags": "Shopify, MESA"
+  },
+  {
+    "id": 6,
+    "name": "Tag fulfillable orders",
+    "description": "Allocate available inventory to fulfillable orders and tag them",
+    "tags": "Shopify, MESA"
+  },
+  {
+    "id": 7,
+    "name": "Sync gift card balance to Klaviyo profile",
+    "description": "Use gift card balances in your campaigns and flows",
+    "tags": "Shopify, MESA, Klaviyo"
+  },
+  {
+    "id": 9,
+    "name": "Import inventory changes from FTP",
+    "description": "Processed a CSV file from FTP with over 6000 records in it.",
+    "tags": "Shopify, Mechanic"
+  },
+  {
+    "id": 10,
+    "name": "Shopify To Mechanic email conversion",
+    "description": "Converts Shopify email liquid to Mechanic liquid.",
+    "tags": "Shopify, Mechanic"
+  },
+  {
+    "id": 11,
+    "name": "Customized vendor notification email for specific line items",
+    "description": "Pulled custom properties into the email",
+    "tags": "Shopify, Mechanic"
+  },
+  {
+    "id": 12,
+    "name": "Skio subscription next billing date update",
+    "description": "Ties into Shopify Flow, hits Skio API",
+    "tags": "Shopify, Mechanic"
+  },
+  {
+    "id": 8,
+    "name": "Get unfulfilled orders for a customer when they place a new order",
+    "description": "Find existing unfulfilled orders when the order is placed.",
+    "tags": "Shopify, Shopify Flow"
+  },
+  {
+    "id": 13,
+    "name": "Order and products sync",
+    "description": "Pulls in products and orders from CSV",
+    "tags": "Mechanic, Shopify Plus"
+  }
+]

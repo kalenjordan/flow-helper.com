@@ -23,19 +23,15 @@ import {
   Avatar,
 } from "@shopify/polaris";
 import "@shopify/polaris/build/esm/styles.css";
-import { PrismaClient } from "@prisma/client";
-const prisma = new PrismaClient();
 
 import { api } from "../api";
 import { useFindMany, useMaybeFindOne } from "@gadgetinc/react";
 import { useLoaderData } from "@remix-run/react";
 
 export async function loader({ params }) {
-  const template = prisma.template.findUnique({
-    where: {
-      id: parseInt(params.id),
-    },
-  });
+  const templatesWrapper = await import("../../data/templates.json");
+  let templates = templatesWrapper.default;
+  let template = templates.find((t) => t.id === parseInt(params.id));
 
   return template;
 }
@@ -82,12 +78,11 @@ export default function Index() {
                       <Link monochrome url="/mechanic">
                         Mechanic
                       </Link>
-                      , MESA, custom code, and other automation apps...if there's something that's possible to do in
-                      Shopify, I should be able to do it for you. And usually pretty quickly.
+                      , MESA, custom code, and other automation apps...if there's something that's possible to do in Shopify, I should be able to do
+                      it for you. And usually pretty quickly.
                     </Text>
                     <Text as="p" variant="bodyLg">
-                      Don't bang your head against the wall trying to articulate exactly what needs to happen. Figuring
-                      it out is my specialty.
+                      Don't bang your head against the wall trying to articulate exactly what needs to happen. Figuring it out is my specialty.
                     </Text>
                     <Text as="p" variant="bodyLg">
                       So, if you're looking for help with anything along these lines, I can't wait to get started!
